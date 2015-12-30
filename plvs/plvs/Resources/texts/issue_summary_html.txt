@@ -1,0 +1,45 @@
+﻿<table class="summary">
+
+<tr><td class="labelcolumn labelsummary">Summary</td>
+<td class="labelsummary">
+<div onmouseover="showInline('summary-edit');" onmouseout="hide('summary-edit');" >{1}
+<div id="summary-edit" class="pencil"><a href="issueedit:summary"><img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></td></tr>
+
+<tr><td class="labelcolumn">Type</td><td><img alt="" src="{2}"/>{3}</td></tr>
+
+<tr><td class="labelcolumn">Status</td><td><img alt="" src="{4}"/>{5}</td></tr>
+
+<!-- subtask parent (if any) -->
+{21}
+
+<tr><td class="labelcolumn">Priority</td><td>
+<div onmouseover="showInline('priority-edit');" onmouseout="hide('priority-edit');" >
+<img alt="" src="{6}"/>{7} <div id="priority-edit" class="pencil"><a href="issueedit:priority"><img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></td></tr>
+
+<tr><td class="labelcolumn">Environment</td><td>
+<div onmouseover="showInline('environment-edit');" onmouseout="hide('environment-edit');" >{8} <div id="environment-edit" class="pencil"><a href="issueedit:environment"><img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></tr>
+
+<tr><td class="labelcolumn">Assignee</td><td>
+<div onmouseover="showInline('assignee-edit');" onmouseout="hide('assignee-edit');" >{9} <div id="assignee-edit" class="pencil"><a href="issueedit:assignee"><img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></tr>
+
+<tr><td class="labelcolumn">Reporter</td><td>{10}</td></tr>
+
+<tr><td class="labelcolumn">Resolution</td><td>{11}</td></tr>
+
+<tr><td class="labelcolumn">Created</td><td>{12}</td></tr>
+
+<tr><td class="labelcolumn">Updated</td><td>{13}</td></tr>
+
+<tr><td class="labelcolumn">{14}</td><td>
+<div onmouseover="showInline('affectsversions-edit');" onmouseout="hide('affectsversions-edit');" >{15} <div id="affectsversions-edit" class="pencil"><a href="issueedit:affectsversions"><img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></tr>
+
+<tr><td class="labelcolumn">{16}</td><td>
+<div onmouseover="showInline('fixversions-edit');" onmouseout="hide('fixversions-edit');" >{17} <div id="fixversions-edit" class="pencil"><a href="issueedit:fixversions"><img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></tr>
+
+<tr><td class="labelcolumn">{18}</td><td>
+<div onmouseover="showInline('components-edit');" onmouseout="hide('components-edit');" >{19} <div id="components-edit" class="pencil"><a href="issueedit:components"><img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></tr>
+
+<!-- original estimate, remaining estimate, time spent -->
+{20}
+
+</table>

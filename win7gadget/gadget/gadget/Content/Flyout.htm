@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Gadget Flyout</title>
+  <link rel="stylesheet" href="Core.css" type="text/css" />
+  <link rel="stylesheet" href="Flyout.css" type="text/css" />
+</head>
+<body id="gadgetFlyout" unselectable="unselectable" scroll="no" style="margin:1em;">
+  <script type="text/javascript" src="mscorlib.js"></script>
+  <script type="text/javascript" src="Script.Windows.js"></script>
+  <script type="text/javascript" src="jquery-1.5.min.js"></script>
+  <script type="text/javascript" src="gadget.js"></script>
+  
+  <div style="position:absolute;left:1em;top:1em;height:2em;line-height:2em;" id="issueKeyLink"></div>
+  <div style="position:absolute;right:1em;top:1em;height:2em;"><input type="button" id="buttonClose" value="Close Issue details"/></div>
+
+  <div id="issueDetails"></div>
+
+  <script type="text/javascript">
+    gadget.FlyoutScriptlet.main();
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿body 
+{
+	background-color:#eeeeee;
+	width:600px;
+	height:600px;
+}
+
+.issueTable 
+{
+	text-align: left;
+	vertical-align: top;
+}
+
+.issueTableHeader 
+{
+	text-align: right;
+	font-weight: bold;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.issueTableContent 
+{
+	text-align: left;
+	padding-right: 1em;
+}
+
+.issueDetails 
+{
+	position:absolute;
+	
+	border:3px;
+	border-style:solid;
+	border-color:#cccccc;
+
+	top:4em;
+	left:1em;
+	right:1em;
+	bottom:1em;
+	overflow:auto;
+	
+	padding:1em;
+}

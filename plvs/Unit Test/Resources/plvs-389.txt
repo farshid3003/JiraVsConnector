@@ -1,0 +1,1574 @@
+{
+  "expand": "renderedFields,names,schema,transitions,operations,editmeta,changelog",
+  "id": "24183",
+  "self": "http://sdjira:8080/rest/api/2/issue/24183",
+  "key": "CAL-3606",
+  "fields": {
+    "summary": "Fehlerhinweis auf nicht aktualisierbare Artikel fehlt in Artikelstammdatenmaske",
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "timetracking": {},
+    "issuetype": {
+      "self": "http://sdjira:8080/rest/api/2/issuetype/2",
+      "id": "2",
+      "description": "A new feature of the product, which has yet to be developed.",
+      "iconUrl": "http://sdjira:8080/images/icons/issuetypes/newfeature.png",
+      "name": "New Feature",
+      "subtask": false
+    },
+    "resolution": null,
+    "fixVersions": [],
+    "security": {
+      "self": "http://sdjira:8080/rest/api/2/securitylevel/10401",
+      "id": "10401",
+      "description": "",
+      "name": "Schueco Service"
+    },
+    "resolutiondate": null,
+    "timespent": null,
+    "reporter": {
+      "self": "http://sdjira:8080/rest/api/2/user?username=sultdo",
+      "name": "sultdo",
+      "emailAddress": "DSchulte@schueco.com",
+      "avatarUrls": {
+        "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=sultdo&avatarId=11509",
+        "48x48": "http://sdjira:8080/secure/useravatar?ownerId=sultdo&avatarId=11509"
+      },
+      "displayName": "Dominik Schulte",
+      "active": true
+    },
+    "aggregatetimeoriginalestimate": null,
+    "created": "2013-02-21T15:34:06.831+01:00",
+    "updated": "2013-02-21T16:26:19.129+01:00",
+    "description": "Beim Auftreten von Fehlern während der Aktualisung von Artikeln in der Artikelstammdatenmaske wird lediglich angegeben wie viele der selektierten Artikel erfolgreich gespeichert konnten.",
+    "priority": {
+      "self": "http://sdjira:8080/rest/api/2/priority/3",
+      "iconUrl": "http://sdjira:8080/images/icons/priorities/major.png",
+      "name": "Major",
+      "id": "3"
+    },
+    "duedate": null,
+    "issuelinks": [],
+    "watches": {
+      "self": "http://sdjira:8080/rest/api/2/issue/CAL-3606/watchers",
+      "watchCount": 2,
+      "isWatching": true
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 0,
+      "total": 0,
+      "worklogs": []
+    },
+    "subtasks": [],
+    "status": {
+      "self": "http://sdjira:8080/rest/api/2/status/1",
+      "description": "The issue is open and ready for the assignee to start work on it.",
+      "iconUrl": "http://sdjira:8080/images/icons/statuses/open.png",
+      "name": "New",
+      "id": "1"
+    },
+    "labels": [
+      "KSW_Ticketpool"
+    ],
+    "workratio": -1,
+    "assignee": {
+      "self": "http://sdjira:8080/rest/api/2/user?username=brakra",
+      "name": "brakra",
+      "emailAddress": "RBrakensiek@schueco.com",
+      "avatarUrls": {
+        "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=brakra&avatarId=12000",
+        "48x48": "http://sdjira:8080/secure/useravatar?ownerId=brakra&avatarId=12000"
+      },
+      "displayName": "Ralf Brakensiek",
+      "active": true
+    },
+    "attachment": [
+      {
+        "self": "http://sdjira:8080/rest/api/2/attachment/23338",
+        "id": "23338",
+        "filename": "GUI_3765__ArtVerw-Aktualisierung.PNG",
+        "author": {
+          "self": "http://sdjira:8080/rest/api/2/user?username=sultdo",
+          "name": "sultdo",
+          "emailAddress": "DSchulte@schueco.com",
+          "avatarUrls": {
+            "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=sultdo&avatarId=11509",
+            "48x48": "http://sdjira:8080/secure/useravatar?ownerId=sultdo&avatarId=11509"
+          },
+          "displayName": "Dominik Schulte",
+          "active": true
+        },
+        "created": "2013-02-21T15:34:53.851+01:00",
+        "size": 112358,
+        "mimeType": "image/png",
+        "content": "http://sdjira:8080/secure/attachment/23338/GUI_3765__ArtVerw-Aktualisierung.PNG",
+        "thumbnail": "http://sdjira:8080/secure/thumbnail/23338/_thumb_23338.png"
+      }
+    ],
+    "customfield_10200": {
+      "self": "http://sdjira:8080/rest/api/2/customFieldOption/10000",
+      "value": "Ja / Yes",
+      "id": "10000"
+    },
+    "aggregatetimeestimate": null,
+    "project": {
+      "self": "http://sdjira:8080/rest/api/2/project/CAL",
+      "id": "10714",
+      "key": "CAL",
+      "name": "SchueCal",
+      "avatarUrls": {
+        "16x16": "http://sdjira:8080/secure/projectavatar?size=small&pid=10714&avatarId=12903",
+        "48x48": "http://sdjira:8080/secure/projectavatar?pid=10714&avatarId=12903"
+      }
+    },
+    "versions": [
+      {
+        "self": "http://sdjira:8080/rest/api/2/version/13302",
+        "id": "13302",
+        "description": "Beta 5",
+        "name": "Beta 5",
+        "archived": false,
+        "released": true,
+        "releaseDate": "2013-02-04"
+      }
+    ],
+    "customfield_11200": null,
+    "timeestimate": null,
+    "customfield_10300": [
+      {
+        "self": "http://sdjira:8080/rest/api/2/customFieldOption/10311",
+        "value": "Artikelstammdaten",
+        "id": "10311"
+      }
+    ],
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "lastViewed": "2013-03-07T08:29:53.021+01:00",
+    "components": [
+      {
+        "self": "http://sdjira:8080/rest/api/2/component/12001",
+        "id": "12001",
+        "name": "article management / base data",
+        "description": "Artikelverwaltung in SchüCal"
+      }
+    ],
+    "comment": {
+      "startAt": 0,
+      "maxResults": 1,
+      "total": 1,
+      "comments": [
+        {
+          "self": "http://sdjira:8080/rest/api/2/issue/24183/comment/45197",
+          "id": "45197",
+          "author": {
+            "self": "http://sdjira:8080/rest/api/2/user?username=sultdo",
+            "name": "sultdo",
+            "emailAddress": "DSchulte@schueco.com",
+            "avatarUrls": {
+              "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=sultdo&avatarId=11509",
+              "48x48": "http://sdjira:8080/secure/useravatar?ownerId=sultdo&avatarId=11509"
+            },
+            "displayName": "Dominik Schulte",
+            "active": true
+          },
+          "body": "Das Setzen und Anzeigen der Fehlerinformation (mittels CMacBaseDialog::SetUndoText()) ist jedoch platzkritisch. Im unteren Bereich des Dialoges ist Platz für einige, wenige Artikelnummern, die sich anzeigen liessen. Im Falle einer größeren Menge von Fehlern reicht dieser Platz nicht mehr aus.\n\nNach Rücksprache mit MA und RH konnte wir aus dem Stegreif keine sinnigen Vorschlag und Ort benennen, wie wir eine solche Information anzeigen, geschweige denn (falls gewünscht) auch speichern (z.B. in einer log-Datei). Die 'SchueCalTrace.txt' ist nicht für die Verwendung seitens des Kunden gedacht und somit als Speicherort für den Kunden nicht empfehlenswert.\n\nLaut MA handelt es sich hier weniger um einen Bug, als ein New Feature, da wir schuecalweit bis dato über kein zentrales \"Sammelbecken\" für ausgeführte Aktionen der Software verfügen, die zugleich für den Kundengebrauch gedacht ist. Bis dato speichern wir in Hinweistexte, sofern ein Element vorhanden ist in einer Position. Hier jedoch haben wir kein Element zur Verfügung. Also scheiden Hinweislisten ebenfalls aus.\n\nDieses Ticket geht somit an dich, Ralf, mit der Bitte um Spezifikation bzw. Vorschlag zur Diskussion im entsprechenden Personenkreis.\n\nGrüße,\nDominik",
+          "updateAuthor": {
+            "self": "http://sdjira:8080/rest/api/2/user?username=sultdo",
+            "name": "sultdo",
+            "emailAddress": "DSchulte@schueco.com",
+            "avatarUrls": {
+              "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=sultdo&avatarId=11509",
+              "48x48": "http://sdjira:8080/secure/useravatar?ownerId=sultdo&avatarId=11509"
+            },
+            "displayName": "Dominik Schulte",
+            "active": true
+          },
+          "created": "2013-02-21T16:13:33.469+01:00",
+          "updated": "2013-02-21T16:13:33.469+01:00"
+        }
+      ]
+    },
+    "timeoriginalestimate": null,
+    "aggregatetimespent": null
+  },
+  "renderedFields": {
+    "aggregatetimeestimate": null,
+    "aggregatetimeoriginalestimate": null,
+    "timetracking": {},
+    "created": "21.02.13 15:34",
+    "updated": "21.02.13 16:26",
+    "description": "<p>Beim Auftreten von Fehlern während der Aktualisung von Artikeln in der Artikelstammdatenmaske wird lediglich angegeben wie viele der selektierten Artikel erfolgreich gespeichert konnten.</p>",
+    "timeestimate": null,
+    "lastViewed": "07.03.13 08:29",
+    "attachment": [
+      {
+        "self": "http://sdjira:8080/rest/api/2/attachment/23338",
+        "id": "23338",
+        "filename": "GUI_3765__ArtVerw-Aktualisierung.PNG",
+        "author": {
+          "self": "http://sdjira:8080/rest/api/2/user?username=sultdo",
+          "name": "sultdo",
+          "emailAddress": "DSchulte@schueco.com",
+          "avatarUrls": {
+            "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=sultdo&avatarId=11509",
+            "48x48": "http://sdjira:8080/secure/useravatar?ownerId=sultdo&avatarId=11509"
+          },
+          "displayName": "Dominik Schulte",
+          "active": true
+        },
+        "created": "21.02.13 15:34",
+        "size": "110 kB",
+        "mimeType": "image/png",
+        "content": "http://sdjira:8080/secure/attachment/23338/GUI_3765__ArtVerw-Aktualisierung.PNG",
+        "thumbnail": "http://sdjira:8080/secure/thumbnail/23338/_thumb_23338.png"
+      }
+    ],
+    "comment": {
+      "startAt": 0,
+      "maxResults": 1,
+      "total": 1,
+      "comments": [
+        {
+          "self": "http://sdjira:8080/rest/api/2/issue/24183/comment/45197",
+          "id": "45197",
+          "author": {
+            "self": "http://sdjira:8080/rest/api/2/user?username=sultdo",
+            "name": "sultdo",
+            "emailAddress": "DSchulte@schueco.com",
+            "avatarUrls": {
+              "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=sultdo&avatarId=11509",
+              "48x48": "http://sdjira:8080/secure/useravatar?ownerId=sultdo&avatarId=11509"
+            },
+            "displayName": "Dominik Schulte",
+            "active": true
+          },
+          "body": "<p>Das Setzen und Anzeigen der Fehlerinformation (mittels CMacBaseDialog::SetUndoText()) ist jedoch platzkritisch. Im unteren Bereich des Dialoges ist Platz für einige, wenige Artikelnummern, die sich anzeigen liessen. Im Falle einer größeren Menge von Fehlern reicht dieser Platz nicht mehr aus.</p>\n\n<p>Nach Rücksprache mit MA und RH konnte wir aus dem Stegreif keine sinnigen Vorschlag und Ort benennen, wie wir eine solche Information anzeigen, geschweige denn (falls gewünscht) auch speichern (z.B. in einer log-Datei). Die 'SchueCalTrace.txt' ist nicht für die Verwendung seitens des Kunden gedacht und somit als Speicherort für den Kunden nicht empfehlenswert.</p>\n\n<p>Laut MA handelt es sich hier weniger um einen Bug, als ein New Feature, da wir schuecalweit bis dato über kein zentrales \"Sammelbecken\" für ausgeführte Aktionen der Software verfügen, die zugleich für den Kundengebrauch gedacht ist. Bis dato speichern wir in Hinweistexte, sofern ein Element vorhanden ist in einer Position. Hier jedoch haben wir kein Element zur Verfügung. Also scheiden Hinweislisten ebenfalls aus.</p>\n\n<p>Dieses Ticket geht somit an dich, Ralf, mit der Bitte um Spezifikation bzw. Vorschlag zur Diskussion im entsprechenden Personenkreis.</p>\n\n<p>Grüße,<br/>\nDominik</p>",
+          "updateAuthor": {
+            "self": "http://sdjira:8080/rest/api/2/user?username=sultdo",
+            "name": "sultdo",
+            "emailAddress": "DSchulte@schueco.com",
+            "avatarUrls": {
+              "16x16": "http://sdjira:8080/secure/useravatar?size=small&ownerId=sultdo&avatarId=11509",
+              "48x48": "http://sdjira:8080/secure/useravatar?ownerId=sultdo&avatarId=11509"
+            },
+            "displayName": "Dominik Schulte",
+            "active": true
+          },
+          "created": "21.02.13 16:13",
+          "updated": "21.02.13 16:13"
+        }
+      ]
+    },
+    "timeoriginalestimate": null,
+    "timespent": null,
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 0,
+      "total": 0,
+      "worklogs": []
+    },
+    "aggregatetimespent": null
+  },
+  "editmeta": {
+    "fields": {
+      "summary": {
+        "required": true,
+        "schema": {
+          "type": "string",
+          "system": "summary"
+        },
+        "name": "Summary",
+        "operations": [
+          "set"
+        ]
+      },
+      "timetracking": {
+        "required": false,
+        "schema": {
+          "type": "timetracking",
+          "system": "timetracking"
+        },
+        "name": "Time Tracking",
+        "operations": [
+          "set",
+          "edit"
+        ]
+      },
+      "issuetype": {
+        "required": true,
+        "schema": {
+          "type": "issuetype",
+          "system": "issuetype"
+        },
+        "name": "Issue Type",
+        "operations": [],
+        "allowedValues": [
+          {
+            "self": "http://sdjira:8080/rest/api/2/issuetype/1",
+            "id": "1",
+            "description": "A problem which impairs or prevents the functions of the product.",
+            "iconUrl": "http://sdjira:8080/images/icons/issuetypes/bug.png",
+            "name": "Bug",
+            "subtask": false
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/issuetype/2",
+            "id": "2",
+            "description": "A new feature of the product, which has yet to be developed.",
+            "iconUrl": "http://sdjira:8080/images/icons/issuetypes/newfeature.png",
+            "name": "New Feature",
+            "subtask": false
+          }
+        ]
+      },
+      "labels": {
+        "required": false,
+        "schema": {
+          "type": "array",
+          "items": "string",
+          "system": "labels"
+        },
+        "name": "Labels",
+        "autoCompleteUrl": "http://sdjira:8080/rest/api/1.0/labels/suggest?query=",
+        "operations": [
+          "add",
+          "set",
+          "remove"
+        ]
+      },
+      "fixVersions": {
+        "required": false,
+        "schema": {
+          "type": "array",
+          "items": "version",
+          "system": "fixVersions"
+        },
+        "name": "Fix Version/s",
+        "operations": [
+          "set",
+          "add",
+          "remove"
+        ],
+        "allowedValues": [
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/10700",
+            "id": "10700",
+            "description": "GUI 3.0 Releaseversion   ehemals 2012",
+            "name": "Beta 2",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2012-11-12",
+            "userReleaseDate": "12.11.12"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/13301",
+            "id": "13301",
+            "description": "Beta 4",
+            "name": "Beta 4",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2012-12-03",
+            "userReleaseDate": "03.12.12"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/14401",
+            "id": "14401",
+            "description": "Funktionen, Probleme oder Fehlerbehebungen  welche unbedingt bis zur finalen Bau Version vorliegen müssen",
+            "name": "Bau 2013",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2013-01-11",
+            "userReleaseDate": "11.01.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/13302",
+            "id": "13302",
+            "description": "Beta 5",
+            "name": "Beta 5",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2013-02-04",
+            "userReleaseDate": "04.02.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/14403",
+            "id": "14403",
+            "description": "Beta 6",
+            "name": "Beta 6",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2013-03-11",
+            "userReleaseDate": "11.03.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/14402",
+            "id": "14402",
+            "description": "Beta 7 (ehemals Release Kandidat)",
+            "name": "Beta 7 ",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-04-12",
+            "overdue": false,
+            "userReleaseDate": "12.04.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/15103",
+            "id": "15103",
+            "description": "Beta 8",
+            "name": "Beta 8",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-05-10",
+            "overdue": false,
+            "userReleaseDate": "10.05.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/12401",
+            "id": "12401",
+            "description": "Beta 9 (ehemals 2013)",
+            "name": "Beta 9",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-06-14",
+            "overdue": false,
+            "userReleaseDate": "14.06.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/15105",
+            "id": "15105",
+            "description": "Release Kandidat",
+            "name": "Beta 10",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-06-28",
+            "overdue": false,
+            "userReleaseDate": "28.06.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/15102",
+            "id": "15102",
+            "description": "spätere Version",
+            "name": "2013 R2",
+            "archived": false,
+            "released": false
+          }
+        ]
+      },
+      "attachment": {
+        "required": false,
+        "schema": {
+          "type": "array",
+          "items": "attachment",
+          "system": "attachment"
+        },
+        "name": "Attachment",
+        "operations": []
+      },
+      "customfield_10200": {
+        "required": false,
+        "schema": {
+          "type": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+          "customId": 10200
+        },
+        "name": "Documentation required",
+        "operations": [
+          "set"
+        ],
+        "allowedValues": [
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10000",
+            "value": "Ja / Yes",
+            "id": "10000"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10001",
+            "value": "Nein / No",
+            "id": "10001"
+          }
+        ]
+      },
+      "reporter": {
+        "required": false,
+        "schema": {
+          "type": "user",
+          "system": "reporter"
+        },
+        "name": "Reporter",
+        "autoCompleteUrl": "http://sdjira:8080/rest/api/latest/user/search?username=",
+        "operations": [
+          "set"
+        ]
+      },
+      "versions": {
+        "required": true,
+        "schema": {
+          "type": "array",
+          "items": "version",
+          "system": "versions"
+        },
+        "name": "Affects Version/s",
+        "operations": [
+          "set",
+          "add",
+          "remove"
+        ],
+        "allowedValues": [
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/10700",
+            "id": "10700",
+            "description": "GUI 3.0 Releaseversion   ehemals 2012",
+            "name": "Beta 2",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2012-11-12",
+            "userReleaseDate": "12.11.12"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/13301",
+            "id": "13301",
+            "description": "Beta 4",
+            "name": "Beta 4",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2012-12-03",
+            "userReleaseDate": "03.12.12"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/14401",
+            "id": "14401",
+            "description": "Funktionen, Probleme oder Fehlerbehebungen  welche unbedingt bis zur finalen Bau Version vorliegen müssen",
+            "name": "Bau 2013",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2013-01-11",
+            "userReleaseDate": "11.01.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/13302",
+            "id": "13302",
+            "description": "Beta 5",
+            "name": "Beta 5",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2013-02-04",
+            "userReleaseDate": "04.02.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/14403",
+            "id": "14403",
+            "description": "Beta 6",
+            "name": "Beta 6",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2013-03-11",
+            "userReleaseDate": "11.03.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/14402",
+            "id": "14402",
+            "description": "Beta 7 (ehemals Release Kandidat)",
+            "name": "Beta 7 ",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-04-12",
+            "overdue": false,
+            "userReleaseDate": "12.04.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/15103",
+            "id": "15103",
+            "description": "Beta 8",
+            "name": "Beta 8",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-05-10",
+            "overdue": false,
+            "userReleaseDate": "10.05.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/12401",
+            "id": "12401",
+            "description": "Beta 9 (ehemals 2013)",
+            "name": "Beta 9",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-06-14",
+            "overdue": false,
+            "userReleaseDate": "14.06.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/15105",
+            "id": "15105",
+            "description": "Release Kandidat",
+            "name": "Beta 10",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2013-06-28",
+            "overdue": false,
+            "userReleaseDate": "28.06.13"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/version/15102",
+            "id": "15102",
+            "description": "spätere Version",
+            "name": "2013 R2",
+            "archived": false,
+            "released": false
+          }
+        ]
+      },
+      "priority": {
+        "required": true,
+        "schema": {
+          "type": "priority",
+          "system": "priority"
+        },
+        "name": "Priority",
+        "operations": [
+          "set"
+        ],
+        "allowedValues": [
+          {
+            "self": "http://sdjira:8080/rest/api/2/priority/2",
+            "iconUrl": "http://sdjira:8080/images/icons/priorities/critical.png",
+            "name": "Critical",
+            "id": "2"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/priority/3",
+            "iconUrl": "http://sdjira:8080/images/icons/priorities/major.png",
+            "name": "Major",
+            "id": "3"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/priority/4",
+            "iconUrl": "http://sdjira:8080/images/icons/priorities/minor.png",
+            "name": "Minor",
+            "id": "4"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/priority/5",
+            "iconUrl": "http://sdjira:8080/images/icons/priorities/trivial.png",
+            "name": "Trivial",
+            "id": "5"
+          }
+        ]
+      },
+      "description": {
+        "required": true,
+        "schema": {
+          "type": "string",
+          "system": "description"
+        },
+        "name": "Description",
+        "operations": [
+          "set"
+        ]
+      },
+      "customfield_10300": {
+        "required": false,
+        "schema": {
+          "type": "array",
+          "items": "string",
+          "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+          "customId": 10300
+        },
+        "name": "Topic",
+        "operations": [
+          "add",
+          "set",
+          "remove"
+        ],
+        "allowedValues": [
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10301",
+            "value": "ADS 50 HD.NI",
+            "id": "10301"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10302",
+            "value": "ADS 65.NI",
+            "id": "10302"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10303",
+            "value": "ADS 65.NI FR30",
+            "id": "10303"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10304",
+            "value": "ADS 65.NI SP",
+            "id": "10304"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10305",
+            "value": "ADS 80 FR 30",
+            "id": "10305"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10402",
+            "value": "ADS 80 FR 30 EI1",
+            "id": "10402"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10306",
+            "value": "ADS 80 FR 60",
+            "id": "10306"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10307",
+            "value": "ADS HD",
+            "id": "10307"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10308",
+            "value": "ADS Maschinenbearbeitung",
+            "id": "10308"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10309",
+            "value": "AOC 50.SI",
+            "id": "10309"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10310",
+            "value": "AOC 60.SI",
+            "id": "10310"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10311",
+            "value": "Artikelstammdaten",
+            "id": "10311"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10312",
+            "value": "ASS 70.HI",
+            "id": "10312"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10313",
+            "value": "ASS 77 PD.HI",
+            "id": "10313"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10314",
+            "value": "ASS 77 PD.NI",
+            "id": "10314"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10315",
+            "value": "ASS 77 PD.SI",
+            "id": "10315"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10316",
+            "value": "ASS 80 FD.HI",
+            "id": "10316"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10317",
+            "value": "ASS Maschinenbearbeitung",
+            "id": "10317"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10318",
+            "value": "aufliegender Beschlag",
+            "id": "10318"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10319",
+            "value": "automatischer Test",
+            "id": "10319"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11402",
+            "value": "AvanTec",
+            "id": "11402"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10320",
+            "value": "AWS 102/AWS 102.NI",
+            "id": "10320"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10404",
+            "value": "AWS 57 RO",
+            "id": "10404"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11101",
+            "value": "AWS 50 BL",
+            "id": "11101"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11403",
+            "value": "AWS 65 FR 30",
+            "id": "11403"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11400",
+            "value": "AWS 90 BS.SI+",
+            "id": "11400"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10326",
+            "value": "AWS 90.SI+/ADS 90PL.SI",
+            "id": "10326"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11405",
+            "value": "AWS 90.SI+ Green",
+            "id": "11405"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10328",
+            "value": "AWS Maschinenbearbeitung",
+            "id": "10328"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10321",
+            "value": "AWS/ADS 50",
+            "id": "10321"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10322",
+            "value": "AWS/ADS 50.NI",
+            "id": "10322"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10323",
+            "value": "AWS/ADS 65",
+            "id": "10323"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10324",
+            "value": "AWS/ADS 70.HI",
+            "id": "10324"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10325",
+            "value": "AWS/ADS 75.SI",
+            "id": "10325"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10327",
+            "value": "AWS/ADS 90 BR",
+            "id": "10327"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11201",
+            "value": "AWS/ADS 90 XR",
+            "id": "11201"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10500",
+            "value": "AWS/ADS 112.IC",
+            "id": "10500"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10329",
+            "value": "CE-Kennzeichnung",
+            "id": "10329"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10330",
+            "value": "CMC 50/CMC 50.HI",
+            "id": "10330"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10331",
+            "value": "Copperfield",
+            "id": "10331"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10701",
+            "value": "Door Control System",
+            "id": "10701"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10333",
+            "value": "Fassade_E2",
+            "id": "10333"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10334",
+            "value": "Fassade BK+FK 2-1",
+            "id": "10334"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10332",
+            "value": "Fassade_ERC_50",
+            "id": "10332"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10900",
+            "value": "Fassaden_FW_SMC_AOC",
+            "id": "10900"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10345",
+            "value": "Fassade_Polygon_LDK",
+            "id": "10345"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10349",
+            "value": "Fassaden_SCC",
+            "id": "10349"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10351",
+            "value": "Fassade_SFC_85",
+            "id": "10351"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10901",
+            "value": "Fassaden_USC_UCC",
+            "id": "10901"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10363",
+            "value": "Fassade_UUC_82",
+            "id": "10363"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11200",
+            "value": "Fassaden_XR",
+            "id": "11200"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10401",
+            "value": "Firestop 60 EI1",
+            "id": "10401"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10335",
+            "value": "Freie Konstruktion",
+            "id": "10335"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10406",
+            "value": "FW 50+BF.HI",
+            "id": "10406"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10407",
+            "value": "FW 60+BF.HI",
+            "id": "10407"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10336",
+            "value": "FW50+/FW60+.SI",
+            "id": "10336"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11407",
+            "value": "FW 50+/60+ SG.SI",
+            "id": "11407"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11406",
+            "value": "FW 50+.SI Green",
+            "id": "11406"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10337",
+            "value": "GAEB-Schnittstelle",
+            "id": "10337"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10338",
+            "value": "Hinweismeldungsmanagement",
+            "id": "10338"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10340",
+            "value": "In Optimierung eingreifen",
+            "id": "10340"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10339",
+            "value": "International",
+            "id": "10339"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10341",
+            "value": "Italien",
+            "id": "10341"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10342",
+            "value": "Kern 3.0",
+            "id": "10342"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10343",
+            "value": "Laufzeit",
+            "id": "10343"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10344",
+            "value": "Luefter",
+            "id": "10344"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10400",
+            "value": "Migration",
+            "id": "10400"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11404",
+            "value": "Moosgummidichtungen",
+            "id": "11404"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11401",
+            "value": "OL 95",
+            "id": "11401"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10700",
+            "value": "OL 200",
+            "id": "10700"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10601",
+            "value": "OL 320",
+            "id": "10601"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11100",
+            "value": "PASK",
+            "id": "11100"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10403",
+            "value": "PRC 50",
+            "id": "10403"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10902",
+            "value": "Profilsystemwechsel",
+            "id": "10902"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10600",
+            "value": "ProSol",
+            "id": "10600"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10346",
+            "value": "Pyramide",
+            "id": "10346"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10347",
+            "value": "Rotunde",
+            "id": "10347"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10348",
+            "value": "RWA",
+            "id": "10348"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10350",
+            "value": "schwimmendes Fenster",
+            "id": "10350"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11102",
+            "value": "Sortimentsbereinigung Fassade",
+            "id": "11102"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/11000",
+            "value": "Sprossenmodus",
+            "id": "11000"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10352",
+            "value": "SQL-Server-Version",
+            "id": "10352"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10802",
+            "value": "Stahl allgemein",
+            "id": "10802"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10801",
+            "value": "Stahl Fassade",
+            "id": "10801"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10800",
+            "value": "Stahl Fenster/Tueren",
+            "id": "10800"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10353",
+            "value": "Statik",
+            "id": "10353"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10354",
+            "value": "Stückartikeldarstellung im Element",
+            "id": "10354"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10355",
+            "value": "Tastaturnavigation",
+            "id": "10355"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10356",
+            "value": "TipTronic",
+            "id": "10356"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10357",
+            "value": "TropTec ASS 39 SC.NI",
+            "id": "10357"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10358",
+            "value": "TropTec AW 40.NI",
+            "id": "10358"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10359",
+            "value": "TropTec AW 48/58.NI",
+            "id": "10359"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10361",
+            "value": "TropTec SC 50 SG.NI",
+            "id": "10361"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10360",
+            "value": "TropTec SC 50.NI",
+            "id": "10360"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10405",
+            "value": "TropTec UC 65 SG.NI",
+            "id": "10405"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10362",
+            "value": "TX-Control",
+            "id": "10362"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/customFieldOption/10903",
+            "value": "Undo_Redo",
+            "id": "10903"
+          }
+        ]
+      },
+      "components": {
+        "required": true,
+        "schema": {
+          "type": "array",
+          "items": "component",
+          "system": "components"
+        },
+        "name": "Component/s",
+        "operations": [
+          "add",
+          "set",
+          "remove"
+        ],
+        "allowedValues": [
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/12001",
+            "id": "12001",
+            "name": "article management / base data",
+            "description": "Artikelverwaltung in SchüCal"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10716",
+            "id": "10716",
+            "name": "article management / import PDM",
+            "description": "Artikelverwaltung Import"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10717",
+            "id": "10717",
+            "name": "backstage view / cross functional",
+            "description": "Backstage View und dessen Verknüpfungen"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10718",
+            "id": "10718",
+            "name": "backstage view / print ",
+            "description": "Ausgabe aus dem Backstage view"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10720",
+            "id": "10720",
+            "name": "calculation",
+            "description": "kalkulatorische Ermittlung + Grunddaten"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10721",
+            "id": "10721",
+            "name": "CE label",
+            "description": "CE Kennzeichnung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10722",
+            "id": "10722",
+            "name": "contacts",
+            "description": "Kontaktmanager"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10723",
+            "id": "10723",
+            "name": "cross-funktional",
+            "description": "funktionsuebergreifend"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10724",
+            "id": "10724",
+            "name": "data export - import",
+            "description": "Datenaustausch Basisfunktionalität"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/12300",
+            "id": "12300",
+            "name": "dongle",
+            "description": "Hardwarechutzstecker / Software Rights Management"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/11901",
+            "id": "11901",
+            "name": "epd",
+            "description": "Umweltproduktdeklaration (EPD - Environmental Product Declaration)"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10725",
+            "id": "10725",
+            "name": "estimation / glass",
+            "description": "Ermittlung Verglasung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10726",
+            "id": "10726",
+            "name": "estimation / material",
+            "description": "Materialermittlung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10727",
+            "id": "10727",
+            "name": "fabrication assembly time estimation",
+            "description": "Fertigungs-/Montagezeitermittlung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10728",
+            "id": "10728",
+            "name": "fabrication lists",
+            "description": "Fertigungslisten"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10729",
+            "id": "10729",
+            "name": "free optimisation",
+            "description": "freie Optimierung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10730",
+            "id": "10730",
+            "name": "gadget",
+            "description": "Minianwendung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10731",
+            "id": "10731",
+            "name": "glass and panels",
+            "description": "Glas und Paneele Grunddaten"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10732",
+            "id": "10732",
+            "name": "help and documentation",
+            "description": "Hilfe zu SchüCal"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10733",
+            "id": "10733",
+            "name": "installation / ADU",
+            "description": "Artikeldatenupdate"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10734",
+            "id": "10734",
+            "name": "installation / content",
+            "description": "Inhalt der DVD"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10735",
+            "id": "10735",
+            "name": "installation / GDF",
+            "description": "General Download Finder"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10736",
+            "id": "10736",
+            "name": "installation / service pack",
+            "description": "Service Pack generell"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10737",
+            "id": "10737",
+            "name": "installation / setup",
+            "description": "Programm Setup"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10738",
+            "id": "10738",
+            "name": "installation / SPU",
+            "description": "Sprachumstellung International"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10739",
+            "id": "10739",
+            "name": "installation / update management",
+            "description": "Aktualisierungsmanagement"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10740",
+            "id": "10740",
+            "name": "interfaces / cad",
+            "description": "SchueCad+/S-Cad/Inventor Anbindung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10741",
+            "id": "10741",
+            "name": "interfaces / erp",
+            "description": "Anbindung ERP-Systeme (Promet, ERPlus, etc.)"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10742",
+            "id": "10742",
+            "name": "interfaces / gaeb",
+            "description": "GAEB inkl. Calinfornia-Anbindung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10743",
+            "id": "10743",
+            "name": "interfaces / section generation",
+            "description": "Schnittgenerierung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10745",
+            "id": "10745",
+            "name": "item / accessories",
+            "description": "zusätzliches Material / Material bearbeiten"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/12113",
+            "id": "12113",
+            "name": "item / additional costs",
+            "description": "zusätzliche Kosten"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10746",
+            "id": "10746",
+            "name": "item / alb",
+            "description": "ALB in einer Position"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10747",
+            "id": "10747",
+            "name": "item / ctb",
+            "description": "CTB in einer Position"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10748",
+            "id": "10748",
+            "name": "item / display profile section",
+            "description": "Schnittdarstellung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10749",
+            "id": "10749",
+            "name": "item / door fitting manager",
+            "description": "Türbeschlagsmanager"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10750",
+            "id": "10750",
+            "name": "item / functions ",
+            "description": "Elementbearbeitung Funktionen"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10751",
+            "id": "10751",
+            "name": "item / general data",
+            "description": "Positionsdaten allgemein"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10752",
+            "id": "10752",
+            "name": "item / system technology",
+            "description": "Systemtechnik, Fügungen"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10753",
+            "id": "10753",
+            "name": "item / technical data",
+            "description": "Positionsdaten technisch"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/12900",
+            "id": "12900",
+            "name": "item / templates",
+            "description": "Positions / Element Vorlagen "
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10754",
+            "id": "10754",
+            "name": "item / view and construction",
+            "description": "Elementdarstellung, Konstruktion und Ansicht"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10756",
+            "id": "10756",
+            "name": "mco",
+            "description": "Maschinenansteuerung MCo"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10757",
+            "id": "10757",
+            "name": "offer management",
+            "description": "Angebotskomponente"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10758",
+            "id": "10758",
+            "name": "optimisation",
+            "description": "Optimierung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10900",
+            "id": "10900",
+            "name": "presettings technical",
+            "description": "technische Vorgaben"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10759",
+            "id": "10759",
+            "name": "price lists",
+            "description": "Preislistengenerierung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10760",
+            "id": "10760",
+            "name": "production batch management",
+            "description": "Fertigungslosverwaltung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10761",
+            "id": "10761",
+            "name": "project / general data",
+            "description": "Projektdaten"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10762",
+            "id": "10762",
+            "name": "project explorer",
+            "description": "Projekt Explorer"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10763",
+            "id": "10763",
+            "name": "quick calculation",
+            "description": "schnelle Kalkulation"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10764",
+            "id": "10764",
+            "name": "rights and settings",
+            "description": "Rechte und Einstellungen"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10774",
+            "id": "10774",
+            "name": "saw",
+            "description": "Sägesansteuerung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10780",
+            "id": "10780",
+            "name": "statics",
+            "description": "statische Vordimensionierung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10781",
+            "id": "10781",
+            "name": "surface finishes and colours",
+            "description": "Oberflächen und Farben"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10782",
+            "id": "10782",
+            "name": "surface optimisation",
+            "description": "Flaechenoptimierung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10783",
+            "id": "10783",
+            "name": "toolbox / backup and restore",
+            "description": "Backup und Restore"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10784",
+            "id": "10784",
+            "name": "toolbox / general",
+            "description": "Toolbox allgemein"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10785",
+            "id": "10785",
+            "name": "u value calculation",
+            "description": "U-Wert-Berechnung"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10786",
+            "id": "10786",
+            "name": "user interface / general usability",
+            "description": "Generelle Fehler zur GUI / Usability"
+          },
+          {
+            "self": "http://sdjira:8080/rest/api/2/component/10787",
+            "id": "10787",
+            "name": "user interface / ribbon",
+            "description": "Menüband"
+          }
+        ]
+      },
+      "comment": {
+        "required": false,
+        "schema": {
+          "type": "array",
+          "items": "comment",
+          "system": "comment"
+        },
+        "name": "Comment",
+        "operations": [
+          "add",
+          "edit",
+          "remove"
+        ]
+      }
+    }
+  }
+}

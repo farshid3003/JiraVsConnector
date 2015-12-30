@@ -1,0 +1,44 @@
+<style type="text/css">
+.summary, .description { 
+	font-size:"10pt";
+	font-family:"Arial"; 
+}
+
+.labelcolumn {
+	text-align:"left";
+	padding-right:"1em";
+	font-weight:"bold";
+	height:"18px";
+}
+
+.labelsummary {
+	padding-bottom:"18px";
+	height:"18px";
+}
+
+.linkcategory {
+	width:100%;
+	background:"lightgrey";
+	padding:"0.5em";
+	font-weight:bold;
+}
+
+.linkdirection {
+	padding-left:"2em";
+	padding-top:"0.5em";
+}
+
+.linkedissues {
+	padding-left:"10em";
+	padding-bottom:"1em";
+}
+
+.issueelement {
+	vertical-align:"top";
+}
+
+.pencil {
+	display:none;
+}
+
+</style>

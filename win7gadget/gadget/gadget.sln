@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gadget", "gadget\gadget.csproj", "{2F8B5B66-0266-4FEA-955D-3AD16C6A3C17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{AF86F7F3-26CC-485F-851F-C001519F2394}"
+	ProjectSection(SolutionItems) = preProject
+		gadget\ScriptSharp.zip = gadget\ScriptSharp.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(MercurialSourceControlSolutionProperties) = preSolution
+		SolutionIsControlled = True
+		SolutionBindings = <Solution Location In Database>
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F8B5B66-0266-4FEA-955D-3AD16C6A3C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F8B5B66-0266-4FEA-955D-3AD16C6A3C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F8B5B66-0266-4FEA-955D-3AD16C6A3C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F8B5B66-0266-4FEA-955D-3AD16C6A3C17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

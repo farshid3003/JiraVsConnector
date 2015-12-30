@@ -1,0 +1,57 @@
+{
+"expand": "editmeta,renderedFields,transitions,changelog,operations",
+"id": "17301",
+"self": "http://jira.oebb.at/jira/rest/api/2/issue/17301",
+"key": "ADM-13",
+"fields": {
+"summary": "Wiki Erweiterung",
+"progress": { "progress": 0, "total": 0 },
+"issuetype": { "self": "http://jira.oebb.at/jira/rest/api/2/issuetype/7", "id": "7", "description": "Vorgang um Anforderungen an die abteilungsinterne Administration zu stellen.", "iconUrl": "http://jira.oebb.at/jira/images/icons/improvement.gif", "name": "Anforderung", "subtask": false },
+"votes": { "self": "http://jira.oebb.at/jira/rest/api/2/issue/ADM-13/votes", "votes": 0, "hasVoted": false },
+"resolution": null,
+"fixVersions": [],
+"resolutiondate": null,
+"timespent": null,
+"reporter": {
+"self": "http://jira.oebb.at/jira/rest/api/2/user?username=org%5Cz274049",
+"name": "org
+z274049",
+"emailAddress": "Christoph.Weinlich@oebb.at",
+"avatarUrls": { "16x16": "http://jira.oebb.at/jira/secure/useravatar?size=small&avatarId=10122", "48x48": "http://jira.oebb.at/jira/secure/useravatar?avatarId=10122" },
+"displayName": "Weinlich Christoph (IKT)",
+"active": true
+},
+"aggregatetimeoriginalestimate": null,
+"updated": "2012-11-14T07:20:53+01:00",
+"created": "2012-11-14T07:20:53+01:00",
+"priority": { "self": "http://jira.oebb.at/jira/rest/api/2/priority/5", "iconUrl": "http://jira.oebb.at/jira/images/icons/priority_trivial.gif", "name": "Trivial", "id": "5" },
+"description": "Könntest Du bitte auch beim SVN für normaler Benutzer beschreiben:\r\n\r\n-\tWie checke ich ein Repository aus\r\n-\tWie checke ich Änderungen ein \r\n\r\nUnd bei der Beschreibung – wie man Änderungen eincheckt, bitte folgendes Beispiel angeben.\r\n\r\nDer zugehörige Jira Tasks kann über das SVN Commit Kommentar verändert werden. \r\nBeispiel: Hinzufügen eines Kommentares und lösen des Tasks JRA-123:\r\nJRA-123 #comment Task gelöst #resolve \r\n\r\n\r\nVielen Dank!!\r\nAndreas\r\n",
+"duedate": null,
+"issuelinks": [],
+"watches": { "self": "http://jira.oebb.at/jira/rest/api/2/issue/ADM-13/watchers", "watchCount": 1, "isWatching": true },
+"subtasks": [],
+"status": { "self": "http://jira.oebb.at/jira/rest/api/2/status/1", "description": "Der Vorgang ist offen und bereit, dass der Bearbeiter mit der Arbeit daran beginnen kann.", "iconUrl": "http://jira.oebb.at/jira/images/icons/status_open.gif", "name": "Offen", "id": "1" },
+"labels": [],
+"assignee": null,
+"workratio": -1,
+"aggregatetimeestimate": null,
+"project": {
+"self": "http://jira.oebb.at/jira/rest/api/2/project/ADM",
+"id": "10600",
+"key": "ADM",
+"name": "Administration",
+"avatarUrls": { "16x16": "http://jira.oebb.at/jira/secure/projectavatar?size=small&pid=10600&avatarId=10011", "48x48": "http://jira.oebb.at/jira/secure/projectavatar?pid=10600&avatarId=10011" }
+},
+"versions": [],
+"environment": null,
+"timeestimate": null,
+"aggregateprogress": { "progress": 0, "total": 0 },
+"components": [
+
+{ "self": "http://jira.oebb.at/jira/rest/api/2/component/10501", "id": "10501", "name": "Subversion" }
+],
+"timeoriginalestimate": null,
+"aggregatetimespent": null
+},
+"renderedFields": {}
+}

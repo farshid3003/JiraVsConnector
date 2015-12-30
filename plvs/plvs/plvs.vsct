@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--  This is the file that defines the actual layout and type of the commands.
+        It is divided in different sections (e.g. command definition, command
+        placement, ...), with each defining a specific set of properties.
+        See the comment before each section for more details about how to
+        use it. -->
+
+  <!--  The VSCT compiler (the tool that translates this file into the binary 
+        format that VisualStudio will consume) has the ability to run a preprocessor 
+        on the vsct file; this preprocessor is (usually) the C++ preprocessor, so 
+        it is possible to define includes and macros with the same syntax used 
+        in C++ files. Using this ability of the compiler here, we include some files 
+        defining some of the constants that we will use inside the file. -->
+
+  <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h"/>
+
+  <!--This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h"/>
+
+  <!--Definition of some VSCT specific constants. In this sample we use it for the IDs inside the guidOfficeIcon group. -->
+  <Extern href="msobtnid.h"/>
+
+  <!--The Commands section is where we the commands, menus and menu groups are defined.
+      This section uses a Guid to identify the package that provides the command defined inside it. -->
+  <Commands package="guidplvsPkg">
+    <!-- Inside this section we have different sub-sections: one for the menus, another  
+    for the menu groups, one for the buttons (the actual commands), one for the combos 
+    and the last one for the bitmaps used. Each element is identified by a command id that  
+    is a unique pair of guid and numeric identifier; the guid part of the identifier is usually  
+    called "command set" and is used to group different command inside a logically related  
+    group; your package should define its own command set in order to avoid collisions  
+    with command ids defined by other packages. -->
+
+    
+    <!-- In this section you can define new menu groups. A menu group is a container for 
+         other menus or buttons (commands); from a visual point of view you can see the 
+         group as the part of a menu contained between two lines. The parent of a group 
+         must be a menu. -->
+
+    <Groups>
+
+      <Group guid="guidplvsCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+
+
+    </Groups>
+
+    <!--Buttons section. -->
+    <!--This section defines the elements the user can interact with, like a menu command or a button 
+        or combo box in a toolbar. -->
+
+    <Buttons>
+      <Button guid="guidplvsCmdSet" id="cmdidToggleToolWindow" priority="0x0100" type="Button">
+        <Parent guid="guidplvsCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="charlie" />
+        <Strings>
+          <CommandName>cmdidToggleToolWindow</CommandName>
+          <ButtonText>Toggle Atlassian Tool Window</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidplvsCmdSet" id="cmdidFindIssue" priority="0x0100" type="Button">
+        <Parent guid="guidplvsCmdSet" id="MyMenuGroup" />
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <CommandName>cmdidFindIssue</CommandName>
+          <ButtonText>Find Issue</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidplvsCmdSet" id="cmdidCreateIssue" priority="0x0100" type="Button">
+        <Parent guid="guidplvsCmdSet" id="MyMenuGroup" />
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <CommandName>cmdidCreateIssue</CommandName>
+          <ButtonText>Create Issue</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidplvsCmdSet" id="cmdidProjectProperties" priority="0x0100" type="Button">
+        <Parent guid="guidplvsCmdSet" id="MyMenuGroup" />
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <CommandName>cmdidProjectProperties</CommandName>
+          <ButtonText>Atlassian Project Configuration</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidplvsCmdSet" id="cmdidGlobalProperties" priority="0x0100" type="Button">
+        <Parent guid="guidplvsCmdSet" id="MyMenuGroup" />
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <CommandName>cmdidGlobalProperties</CommandName>
+          <ButtonText>Atlassian Global Configuration</ButtonText>
+        </Strings>
+      </Button>
+
+    </Buttons>
+
+    <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
+    <Bitmaps>
+      <!--  The bitmap id is defined in a way that is a little bit different from the others: 
+            the declaration starts with a guid for the bitmap strip, then there is the resource id of the 
+            bitmap strip containing the bitmaps and then there are the numeric ids of the elements used 
+            inside a button definition. An important aspect of this declaration is that the element id 
+            must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
+      <Bitmap guid="guidImages" href="Resources\icons\Images.bmp" usedList="charlie, jira, jiraFind, jiraCreate, bamboo"/>
+
+    </Bitmaps>
+ 
+  </Commands>
+
+  <KeyBindings>
+    <KeyBinding guid="guidplvsCmdSet" id="cmdidToggleToolWindow" mod1="Alt" key1="k" editor="guidVSStd97" />
+    <KeyBinding guid="guidplvsCmdSet" id="cmdidFindIssue" mod1="Alt" key1="j" editor="guidVSStd97" />
+    <KeyBinding guid="guidplvsCmdSet" id="cmdidCreateIssue" mod1="Alt" key1="n" editor="guidVSStd97" />
+    <KeyBinding guid="guidplvsCmdSet" id="cmdidProjectProperties" mod1="Alt Shift" key1="g" editor="guidVSStd97" />
+    <KeyBinding guid="guidplvsCmdSet" id="cmdidGlobalProperties" mod1="Alt Shift" key1="h" editor="guidVSStd97" />
+  </KeyBindings>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidplvsPkg" value="{36fa5f7f-2b5d-4cec-8c06-10c483683a16}" />
+    
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidplvsCmdSet" value="{85a7fbbb-c60c-4329-9f0f-2fdf1fa122e6}">
+
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="cmdidToggleToolWindow" value="0x0100" />
+      <IDSymbol name="cmdidFindIssue" value="0x0101" />
+      <IDSymbol name="cmdidCreateIssue" value="0x0102" />
+      <IDSymbol name="cmdidProjectProperties" value="0x0103" />
+      <IDSymbol name="cmdidGlobalProperties" value="0x0104" />
+
+    </GuidSymbol>
+    
+    <GuidSymbol name="guidImages" value="{4e2c730f-89ea-4c16-96df-1d684ab49fa4}" >
+      <IDSymbol name="charlie" value="1" />
+      <IDSymbol name="jira" value="2" />
+      <IDSymbol name="jiraFind" value="3" />
+      <IDSymbol name="jiraCreate" value="4" />
+      <IDSymbol name="bamboo" value="5" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>

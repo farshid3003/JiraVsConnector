@@ -1,0 +1,1 @@
+﻿<tr><td class="labelcolumn">Parent Issue</td><td><a href="parentissue:{0}">{0}</a></td>

@@ -1,0 +1,8 @@
+﻿<tr><td class="labelcolumn">Original Estimate</td><td>{1}</td></tr>
+
+<tr><td class="labelcolumn">Remaining Estimate</td>
+<td><div onmouseover="showInline('timetracking-edit');" onmouseout="hide('timetracking-edit');" >{2}
+<div id="timetracking-edit" class="pencil"><a href="issueedit:timetracking">
+<img src="{0}" alt="Edit" style="border-style:none;vertical-align:top;"></a></div></div></td></tr>
+
+<tr><td class="labelcolumn">Time Spent</td><td>{3}</td></tr>

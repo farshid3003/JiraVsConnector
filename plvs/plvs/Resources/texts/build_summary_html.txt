@@ -1,0 +1,14 @@
+﻿<table class="summary">
+
+<tr><td class="labelcolumn">Build Number</td><td>{0}</td></tr>
+<tr><td class="labelcolumn">Build State</td><td style="color:{8};">{7}</td></tr>
+<tr><td class="labelcolumn">Build Key</td><td>{1}</td></tr>
+<tr><td class="labelcolumn">Build Reason</td><td>{2}</td></tr>
+<tr><td class="labelcolumn">Tests</td><td>{3}</td></tr>
+<tr><td class="labelcolumn">Completed</td><td>{4}</td></tr>
+<tr><td class="labelcolumn">Duration</td><td>{5}</td></tr>
+<tr><td class="labelcolumn">Server</td><td>{6}</td></tr>
+<tr><td class="labelcolumn">Artifacts</td><td>{9}</td></tr>
+<tr><td class="labelcolumn">JIRA Issues</td><td>{10}</td></tr>
+
+</table>

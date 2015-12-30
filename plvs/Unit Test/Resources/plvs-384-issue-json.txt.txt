@@ -1,0 +1,166 @@
+{
+  "expand": "editmeta,renderedFields,transitions,changelog,operations",
+  "id": "62949",
+  "self": "https://www.FOOBAR.de/jira/rest/api/2/issue/62949",
+  "key": "FOOPROJECTI-691",
+  "fields": {
+    "summary": "OBUFSCATED OBFUSCATEDOBUFSCATED OBFUSCATEDOBUFSCATED OBFUSCATEDOBUFSCATED OBFUSCATED",
+    "customfield_11067": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10561": null,
+    "customfield_11066": null,
+    "customfield_11065": null,
+    "customfield_10661": null,
+    "customfield_11064": null,
+    "issuetype": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/issuetype/6",
+      "id": "6",
+      "description": "A question about the system.",
+      "iconUrl": "https://www.FOOBAR.de/jira/images/icons/genericissue.gif",
+      "name": "Question",
+      "subtask": false
+    },
+    "customfield_11069": "Not Started",
+    "customfield_11068": null,
+    "customfield_10324": null,
+    "customfield_11063": null,
+    "customfield_11062": null,
+    "customfield_10231": null,
+    "customfield_11061": null,
+    "timespent": null,
+    "customfield_11060": null,
+    "reporter": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/user?username=xxxx",
+      "name": "xxxxx",
+      "emailAddress": "xxx@FOOBAR.de",
+      "avatarUrls": {
+        "16x16": "https://www.FOOBAR.de/jira/secure/useravatar?size=small&ownerId=xxxx&avatarId=11000",
+        "48x48": "https://www.FOOBAR.de/jira/secure/useravatar?ownerId=xxxxx&avatarId=11000"
+      },
+      "displayName": "OBUFSCATED OBFUSCATED",
+      "active": true
+    },
+    "customfield_10330": null,
+    "customfield_10332": null,
+    "customfield_10041": [
+      "com.atlassian.crowd.embedded.ofbiz.OfBizUser@367c4030",
+      "com.atlassian.crowd.embedded.ofbiz.OfBizUser@fe579d0c",
+      "com.atlassian.crowd.embedded.ofbiz.OfBizUser@d1143108"
+    ],
+    "customfield_10331": null,
+    "created": "2013-03-15T10:35:08+01:00",
+    "updated": "2013-03-15T11:55:46+01:00",
+    "priority": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/priority/3",
+      "iconUrl": "https://www.FOOBAR.de/jira/images/icons/priority_major.gif",
+      "name": "Major",
+      "id": "3"
+    },
+    "description": "OBUFSCATED OBFUSCATEDOBUFSCATED OBFUSCATEDOBUFSCATED OBFUSCATED  einen minimal positiven Wert zu setzten (was nicht möglich ist). Liegt das an der Regelung oder an unseren Testdaten??\r\n\r\n{code}\r\n03/15/2013 10:21:53 | FATAL |              PlanExecutor | Ein schwerer Fehler ist während des Messlaufs aufgetreten. FOOPROJECT.Ate.Device.DeviceException: Am Attenuator wird versucht eine positive Dämpfung 0dB [AttMD] einzustellen! Dies ist aber nicht möglich.\r\n   bei FOOPROJECT.Ate.Driver.Fake.Attenuator.set_Attenuation(MeasureValue value) in D:\\FOOPROJECT\\trunk_bugfix\\AteDriverFake\\Fake\\Attenuator.vb:Zeile 22.\r\n   bei FOOPROJECT.Core.Device.Proxy.AttenuatorProxy.set_Attenuation(MeasureValue value) in D:\\FOOPROJECT\\trunk_bugfix\\Core\\Device\\Proxy\\AttenuatorProxy.vb:Zeile 22.\r\n   bei FOOPROJECT.Core.Device.DeviceControl.ControlLoopAdjustPRawByAttenuator(MeasureValue desiredPowerLevel, IMeterDevice powermeter) in D:\\FOOPROJECT\\trunk_bugfix\\Core\\Device\\DeviceControl.vb:Zeile 137.\r\n   bei FOOPROJECT.Core.Device.DeviceControl.CreateSnapshotUsingAttenuator(SnapshotType snapshotType, MeasureValue frequency, MeasureValue powerLevel, MeasureDevice device, MeasureValue timeToWait) in D:\\FOOPROJECT\\trunk_bugfix\\Core\\Device\\DeviceControl.vb:Zeile 111.\r\n   bei FOOPROJECT.Core.Measure.Execution.Command.PhaseMeasureExecutor.Execute(IMeasurementRun measurementRun, ExecutionStep executionStep, IPlanExecutionSession runtimeSession, Boolean hasAttenuator) in D:\\FOOPROJECT\\trunk_bugfix\\Core\\Measure\\Execution\\Command\\PhaseMeasureExecutor.vb:Zeile 86.\r\n   bei FOOPROJECT.Core.Measure.Execution.Command.PhaseMeasureExecutor.Execute(IMeasurementRun measurementRun, ExecutionStep executionStep, IPlanExecutionSession runtimeSession) in D:\\FOOPROJECT\\trunk_bugfix\\Core\\Measure\\Execution\\Command\\PhaseMeasureExecutor.vb:Zeile 25.\r\n   bei FOOPROJECT.Core.Measure.Execution.PlanExecutor.PerformExecution(ExecutionStep executionStep, ICommandExecutor executor) in D:\\FOOPROJECT\\trunk_bugfix\\Core\\Measure\\Execution\\PlanExecutor.vb:Zeile 276.\r\n   bei FOOPROJECT.Core.Measure.Execution.PlanExecutor.Execute(Object sender, DoWorkEventArgs e) in D:\\FOOPROJECT\\trunk_bugfix\\Core\\Measure\\Execution\\PlanExecutor.vb:Zeile 178.\r\n\r\n{code}\r\n[~xxxxxx]: Wenn du keine Zeit hast mir zurück assignen",
+    "customfield_10043": null,
+    "customfield_10040": null,
+    "issuelinks": [],
+    "customfield_10760": null,
+    "subtasks": [],
+    "status": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/status/1",
+      "description": "The issue is open and ready for the assignee to start work on it.",
+      "iconUrl": "https://www.FOOBAR.de/jira/images/icons/status_open.gif",
+      "name": "Open",
+      "id": "1"
+    },
+    "labels": [],
+    "workratio": -1,
+    "project": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/project/FOOPROJECTI",
+      "id": "10400",
+      "key": "FOOPROJECTI",
+      "name": "FOOPROJECT Implementierung",
+      "avatarUrls": {
+        "16x16": "https://www.FOOBAR.de/jira/secure/projectavatar?size=small&pid=10400&avatarId=10082",
+        "48x48": "https://www.FOOBAR.de/jira/secure/projectavatar?pid=10400&avatarId=10082"
+      }
+    },
+    "customfield_10320": null,
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "components": [
+      {
+        "self": "https://www.FOOBAR.de/jira/rest/api/2/component/10935",
+        "id": "10935",
+        "name": "Messsteuerung"
+      }
+    ],
+    "timeoriginalestimate": null,
+    "customfield_10460": null,
+    "customfield_10360": "27685",
+    "votes": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/issue/FOOPROJECTI-691/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "fixVersions": [
+      {
+        "self": "https://www.FOOBAR.de/jira/rest/api/2/version/15140",
+        "id": "15140",
+        "description": "2.te Iteration M2",
+        "name": "2.0.alpha2",
+        "releaseDate": "2013-03-22",
+        "archived": false,
+        "released": false
+      }
+    ],
+    "resolution": null,
+    "resolutiondate": null,
+    "aggregatetimeoriginalestimate": null,
+    "duedate": null,
+    "watches": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/issue/FOOPROJECTI-691/watchers",
+      "watchCount": 2,
+      "isWatching": true
+    },
+    "assignee": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/user?username=txxxxx",
+      "name": "txxxx",
+      "emailAddress": "t.xxxxxx@FOOBAR.de",
+      "avatarUrls": {
+        "16x16": "https://www.FOOBAR.de/jira/secure/useravatar?size=small&avatarId=10222",
+        "48x48": "https://www.FOOBAR.de/jira/secure/useravatar?avatarId=10222"
+      },
+      "displayName": "OBUFSCATED OBFUSCATED",
+      "active": true
+    },
+    "aggregatetimeestimate": null,
+    "versions": [
+      {
+        "self": "https://www.FOOBAR.de/jira/rest/api/2/version/14640",
+        "id": "14640",
+        "description": "Nächste Iteration für M2",
+        "name": "2.0.alpha1",
+        "releaseDate": "2013-03-08",
+        "archived": false,
+        "released": true
+      }
+    ],
+    "timeestimate": null,
+    "customfield_10071": null,
+    "aggregatetimespent": null,
+    "customfield_10070": {
+      "self": "https://www.FOOBAR.de/jira/rest/api/2/user?username=xxxx",
+      "name": "xxxxxx",
+      "emailAddress": "w.xxxx@FOOBAR.de",
+      "avatarUrls": {
+        "16x16": "https://www.FOOBAR.de/jira/secure/useravatar?size=small&ownerId=xxxxxx&avatarId=11000",
+        "48x48": "https://www.FOOBAR.de/jira/secure/useravatar?ownerId=xxxxxx&avatarId=11000"
+      },
+      "displayName": "OBUFSCATED OBFUSCATED",
+      "active": true
+    }
+  },
+  "renderedFields": {}
+}

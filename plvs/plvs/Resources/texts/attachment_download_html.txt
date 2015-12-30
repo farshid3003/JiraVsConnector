@@ -1,0 +1,8 @@
+﻿<body style="padding:2em;margin:0;">
+<div style="font-family:{0};font-size:12px;">
+
+<center>Unable to view attachment {1}</center>
+<center>Right-click on it and select "Save as..." from the menu to save attachment as a file</center>
+
+</div>
+</body>

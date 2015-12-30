@@ -1,0 +1,16 @@
+<response>
+  <version>
+    <number>1.3.11-STABLE-20130903-1404</number>
+    <downloadUrl>http://update.atlassian.com/atlassian-vs-plugin/Downloads/atlassian-vs-connector-setup-1.3.11-STABLE-20130903-1404.exe</downloadUrl>
+    <releaseNotes><![CDATA[
+              <html><body>
+
+        <p>
+        This is a SNAPSHOT version. We do testing but cannot guarantee the major version stability level.         
+        </p>
+
+        </body></html>
+        ]]></releaseNotes>
+    <releaseNotesUrl>http://confluence.atlassian.com/display/IDEPLUGIN/Atlassian+Connector+for+Visual+Studio+-+1.3.11+Release+Notes</releaseNotesUrl>
+  </version>
+</response>

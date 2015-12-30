@@ -1,0 +1,7 @@
+﻿<body style="padding:2em;margin:0;">
+<div style="font-family:{0};font-size:12px;">
+
+<center>Unable to explore JIRA server {1}</center>
+
+</div>
+</body>

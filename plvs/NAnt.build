@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+
+<project name="Atlassian Connector for Visual Studio" default="help" basedir=".">
+  
+  <!--  overridable properties-->
+  <property name="configuration" value="Release" overwrite="false" />
+  <property name="version" value="0.0.0" overwrite="false" readonly="false" />
+  <property name="build.type" value="SNAPSHOT" overwrite="false" readonly="false" />
+  <property name="build.stamp" value="00000000-0000" overwrite="false" readonly="false" />
+  <!--<property name="upload.host" value="update.atlassian.com" overwrite="false" />-->
+  <property name="upload.host" value="update-fe.internal.atlassian.com" overwrite="false" />
+  <property name="upload.dir" value="/var/www/domains/atlassian.com/update/htdocs/atlassian-vs-plugin" overwrite="false" />
+  <property name="download.url" value="http://update.atlassian.com/atlassian-vs-plugin/Downloads" overwrite="false" />
+  
+  <property name="snapshot.xml.file" value="latestPossibleVersion.xml" overwrite="false" />
+  <property name="scp.exe" value="c:/progra~1/putty/pscp.exe" overwrite="false" />
+  <property name="scp.key" value="bogus" overwrite="false" />
+  <property name="scp.opts" value="-i ${scp.key} -noagent -v -batch" overwrite="false" />
+  <property name="scp.login" value="bogus" overwrite="false" />
+  <property name="nsis" value="c:/progra~1/nsis/makensis.exe" overwrite="false" />
+  <property name="msbuild35" value="C:/Windows/Microsoft.NET/Framework/v3.5/MSBuild.exe" overwrite="false" />
+  <property name="msbuild40" value="C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" overwrite="false" />
+  
+  <!--  read-only properties-->
+  <property name="main.project" value="plvs" />
+  <property name="setup.base.file.name" value="atlassian-vs-connector-setup" />
+
+  <target name="version.update">
+    <loadfile file="version.info" property="version"/>
+    <tstamp property="build.stamp" pattern="yyyyMMdd-HHmm" verbose="true" />
+    
+    <echo file="plvs/PlvsVersionInfo.cs">
+      namespace Atlassian.plvs {
+          public class PlvsVersionInfo {
+              public static string Version { get { return "${version}"; } }
+              public static string BuildType { get { return "${build.type}"; } }
+              public static string Stamp { get { return "${build.stamp}"; } }
+              public const string VersionAndStamp = "${version}-${build.stamp}";
+          }
+      }
+    </echo>
+  </target>
+
+  <target name="clean">
+    <delete dir="${main.project}/bin/${configuration}" />
+    <delete dir="${main.project}/obj/${configuration}" />
+    <delete dir="${main.project}/obj/x86/${configuration}" />
+  </target>
+
+  <target name="build.setup" depends="clean,version.update" >
+    <exec program="${msbuild35}">
+      <arg value="${main.project}/${main.project}2008.csproj" />
+      <arg value="/p:Configuration=${configuration},Platform=x86" />
+      <arg value="/v:m" />
+      <arg value="/clp:ShowCommandLine" />
+    </exec>
+    <exec program="${msbuild40}">
+      <arg value="${main.project}/${main.project}2010.csproj" />
+      <arg value="/p:Configuration=${configuration},Platform=x86" />
+      <arg value="/v:m" />
+      <arg value="/clp:ShowCommandLine" />
+    </exec>
+    <exec program="${nsis}">
+      <arg value="/DVERSION=${version}-${build.stamp}" />
+      <arg value="setup.nsi" />
+    </exec>
+  </target>
+
+  <target name="make.setup.file" depends="build.setup"  >
+    <copy file="${main.project}/bin/${configuration}/plvs-setup.exe"
+          tofile="${main.project}/bin/${configuration}/${setup.base.file.name}-${version}-${build.type}-${build.stamp}.exe" />
+  </target>
+
+  <target name="snapshot.xml.update" depends="make.setup.file">
+    <xmlpoke
+       file="${snapshot.xml.file}" 
+       xpath="/response/version/number"
+       value="${version}-${build.type}-${build.stamp}" />
+    <xmlpoke
+       file="${snapshot.xml.file}" 
+       xpath="/response/version/downloadUrl"
+       value="${download.url}/${setup.base.file.name}-${version}-${build.type}-${build.stamp}.exe" />
+  </target>
+
+  <target name="upload.snapshot" depends="snapshot.xml.update">
+    <exec program="${scp.exe}">
+      <arg line="${scp.opts}" />
+      <arg value="${main.project}/bin/${configuration}/${setup.base.file.name}-${version}-${build.type}-${build.stamp}.exe" />
+      <arg value="${scp.login}@${upload.host}:${upload.dir}/Downloads/${setup.base.file.name}-${version}-${build.type}-${build.stamp}.exe" />
+    </exec>
+    <exec program="${scp.exe}">
+      <arg line="${scp.opts}" />
+      <arg value="${snapshot.xml.file}" />
+      <arg value="${scp.login}@${upload.host}:${upload.dir}/${snapshot.xml.file}" />
+    </exec>
+  </target>
+  
+  <target name="help">
+    <echo>
+      Targets:
+          clean           - cleans up the current configuration
+          build.setup     - creates ${main.project}.msi file
+          make.setup.file - creates setup file with a target file name
+          upload.snapshot - builds a setup file and uploads to DAC
+      
+      Build artifacts are stored in the
+      ${main.project}/bin/$${configuration} directory
+
+      Overridable properties:
+
+          configuration    - "Debug" or "Release".
+                             Default: "Release"
+
+          build.type       - build type stamp used.
+                             Default: "SNAPSHOT"
+          
+          scp.exe          - location of the pscp.exe program
+          
+          scp.key          - location of the private key for pscp
+                             (key must not be passphrase-protected)
+          
+          scp.login        - login name for pscp
+          
+    </echo>
+  </target>
+</project>

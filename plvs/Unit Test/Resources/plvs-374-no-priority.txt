@@ -1,0 +1,67 @@
+{
+"expand": "editmeta,renderedFields,transitions,changelog,operations",
+"id": "14078",
+"self": "http://jira.oebb.at/jira/rest/api/2/issue/14078",
+"key": "EFB-88",
+"fields": {
+"summary": "Tooltipp zur ZF-Kennung",
+"progress": { "progress": 0, "total": 0 },
+"issuetype": { "self": "http://jira.oebb.at/jira/rest/api/2/issuetype/3", "id": "3", "description": "Eine Aufgabe, die erledigt werden muss.", "iconUrl": "http://jira.oebb.at/jira/images/icons/task.gif", "name": "Aufgabe", "subtask": false },
+"votes": { "self": "http://jira.oebb.at/jira/rest/api/2/issue/EFB-88/votes", "votes": 0, "hasVoted": false },
+"resolution": null,
+"fixVersions": [],
+"resolutiondate": null,
+"timespent": null,
+"reporter": {
+"self": "http://jira.oebb.at/jira/rest/api/2/user?username=gv%5Cz202481",
+"name": "gv
+z202481",
+"emailAddress": "kurt.pichler@railcargo.at",
+"avatarUrls": { "16x16": "http://jira.oebb.at/jira/secure/useravatar?size=small&avatarId=10122", "48x48": "http://jira.oebb.at/jira/secure/useravatar?avatarId=10122" },
+"displayName": "Pichler Kurt NB",
+"active": true
+},
+"aggregatetimeoriginalestimate": null,
+"updated": "2012-11-13T09:04:44+01:00",
+"created": "2010-02-23T08:28:34+01:00",
+"priority": null,
+"description": "Im Tooltipp zur ZF-Kennung (Kundensuche) wird derzeit die ZF-Kennung selbst angezeigt. Bitte hier bei nächster Gelegenheit - ev. MAV-Anpassung - auf den Langtext zur jeweiligen ZF-Kennung switchen.",
+"duedate": null,
+"issuelinks": [],
+"watches": { "self": "http://jira.oebb.at/jira/rest/api/2/issue/EFB-88/watchers", "watchCount": 1, "isWatching": false },
+"subtasks": [],
+"status": { "self": "http://jira.oebb.at/jira/rest/api/2/status/1", "description": "Der Vorgang ist offen und bereit, dass der Bearbeiter mit der Arbeit daran beginnen kann.", "iconUrl": "http://jira.oebb.at/jira/images/icons/status_open.gif", "name": "Offen", "id": "1" },
+"labels": [],
+"assignee": {
+"self": "http://jira.oebb.at/jira/rest/api/2/user?username=aion",
+"name": "aion",
+"emailAddress": "adriana.ion@evolit.co.at",
+"avatarUrls": { "16x16": "http://jira.oebb.at/jira/secure/useravatar?size=small&avatarId=10122", "48x48": "http://jira.oebb.at/jira/secure/useravatar?avatarId=10122" },
+"displayName": "Adriana Ion",
+"active": true
+},
+"workratio": -1,
+"aggregatetimeestimate": null,
+"project": {
+"self": "http://jira.oebb.at/jira/rest/api/2/project/EFB",
+"id": "10733",
+"key": "EFB",
+"name": "E-Frachtbrief",
+"avatarUrls": { "16x16": "http://jira.oebb.at/jira/secure/projectavatar?size=small&pid=10733&avatarId=10011", "48x48": "http://jira.oebb.at/jira/secure/projectavatar?pid=10733&avatarId=10011" }
+},
+"versions": [
+
+{ "self": "http://jira.oebb.at/jira/rest/api/2/version/11383", "id": "11383", "name": "9.6.23", "archived": false, "released": true, "releaseDate": "2010-01-14" }
+],
+"environment": null,
+"timeestimate": null,
+"aggregateprogress": { "progress": 0, "total": 0 },
+"components": [
+
+{ "self": "http://jira.oebb.at/jira/rest/api/2/component/10818", "id": "10818", "name": "Sonstige" }
+],
+"timeoriginalestimate": null,
+"aggregatetimespent": null
+},
+"renderedFields": {}
+}

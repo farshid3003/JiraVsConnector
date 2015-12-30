@@ -1,0 +1,48 @@
+﻿body 
+{
+	width:350px;
+	height:400px;
+}
+
+.label 
+{
+	width:6em;
+	position:absolute;
+	left:0em;
+	line-height:2em;
+	height:2em;
+	text-align:right;
+}
+
+.labelBig 
+{
+	width:10em;
+	position:absolute;
+	left:0em;
+	line-height:2em;
+	height:2em;
+	text-align:right;
+}
+
+.txtbox 
+{
+	position:absolute;
+	right:0em;
+	width:100%;
+	margin-left:7em;
+}
+
+.txtbox2 
+{
+	position:absolute;
+	right:0em;
+	width:100%;
+	margin-left:11em;
+}
+
+.chkbox
+{
+	position:absolute;
+	width:100%;
+	margin-left:11em;
+}

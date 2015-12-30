@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>JIRA Gadget</name>
+  <namespace>gadget</namespace>
+  <version>1.0.0.0</version>
+  <author name="Atlassian">
+    <info url="http://www.atlassian.com" />
+    <logo src="logo-atlassian.png" />
+  </author>
+  <copyright>Copyright (c) 2010</copyright>
+  <description>Shows JIRA Issues</description>
+  <icons>
+    <icon height="48" width="48" src="logo-jira.gif" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="Gadget.htm" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <defaultImage src="logo-jira.gif" />
+    </host>
+  </hosts>
+</gadget>

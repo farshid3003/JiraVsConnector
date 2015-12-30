@@ -1,0 +1,11 @@
+﻿<body style="padding:0;margin:0;background-color:{1};">
+<div style="font-family:{0};font-size:12px;background-color:{1};">
+
+<div>New Version of the connector is available: <strong>{2}</strong></div>
+<br>
+<div style="font-size:large;">Highlights of the new version:</div>
+
+<div>{3}</div>
+
+</div>
+</body>

@@ -1,0 +1,78 @@
+﻿body 
+{
+	font-family:Sans-Serif;
+	font-size:8pt;
+}
+
+.docked 
+{
+	background-color:#eeeeee;
+}
+
+.undocked 
+{
+	 background-color:#eeeeee;
+}
+
+#jiraResponse 
+{
+	background-color: #eeeeee;
+	text-align:left;
+	padding-right:30px;
+	border:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	
+	scrollbar-base-color: White; 
+	scrollbar-arrow-color: #eeeeee; 
+	scrollbar-3dlight-color: #bbbbbb; 
+	scrollbar-darkshadow-color: #bbbbbb; 
+	scrollbar-face-color: #cccccc; 
+	scrollbar-highlight-color: #bbbbbb; 
+	scrollbar-shadow-color: #bbbbbb; 
+	scrollbar-track-color: #eeeeee; 
+	overflow-x: hidden; 
+	overflow-y: scroll;
+}
+
+.filler 
+{
+	width:30px;
+	height:10px;
+	display:none;
+	background-color:Red;
+}
+
+.oddRow 
+{
+	position:relative;
+	background-color:White;
+	width:100%;
+	cursor:pointer;
+	padding:0.5em;
+}
+
+.evenRow 
+{
+	position:relative;
+	background-color:#eeeeee;
+	width:100%;
+	cursor:pointer;
+	padding:0.5em;
+}
+
+.issuetext 
+{
+	position:relative;
+	left:0;
+	top:0;
+	margin-right:50px;
+}
+
+.issueicons 
+{
+	position:absolute;
+	right:0;
+	top:0.5em;
+}
+

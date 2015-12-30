@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Gadget Settings</title>
+  <link rel="stylesheet" href="Core.css" type="text/css" />
+  <link rel="stylesheet" href="Settings.css" type="text/css" />
+  <script src="xmlrpc.js" type="text/javascript"></script>
+  <script src="rpc.js" type="text/javascript"></script>
+  <script src="optionreader.js" type="text/javascript"></script>
+</head>
+
+<body id="gadgetSettings" unselectable="unselectable" scroll="no" style="margin:1em;" >
+  <script type="text/javascript" src="mscorlib.js"></script>
+  <script type="text/javascript" src="Script.Windows.js"></script>
+  <script type="text/javascript" src="jquery-1.5.min.js"></script>
+  <script type="text/javascript" src="gadget.js"></script>
+  
+  <form name="settingsform">
+  <fieldset style="position:absolute;left:0em;right:0em;top:0em;height:14em;width:24em;">
+    <legend>Connection Settings</legend>
+      <div style="position:absolute;top:2em;left:0em;right:3em;">
+        <div class="label">JIRA URL</div>
+        <div class="txtbox"><input type="text" id="url" size="27"/></div>
+      </div>
+      <div style="position:absolute;top:5em;left:0em;right:3em;">
+        <div class="label">Login</div>
+        <div class="txtbox"><input type="text" id="login" size="27"/></div>
+      </div>
+      <div style="position:absolute;top:8em;left:0em;right:3em;">
+        <div class="label">Password</div>
+        <div class="txtbox"><input type="password" id="password" size="27"/></div>
+      </div>
+      <div style="position:absolute;top:11em;left:7em;right:3em;">
+        <input type="button" size="100" id="testConnection" value="Test Connection"/>
+      </div>
+  </fieldset>
+  <div style="position:absolute;top:16em;left:0em;width:100%;">
+    <div class="label">Project</div>
+    <div style="position:absolute;left:7em;">
+        <select style="width:15em;" id="projects" name="projects">
+            <option value="dummy">Projects not retrieved yet</option>
+        </select>
+    </div>
+    <div style="position:absolute;top:3em;left:7em;width:100%;">
+        <input type="button" id="retrieveProjects" value="Retrieve Projects"/>
+    </div>
+  </div>
+  <div style="position:absolute;top:23em;left:0em;width:100%;">
+    <div class="label">Filter</div>
+    <div style="position:absolute;left:7em;width:100%;">
+        <select style="width:15em;" id="filters" name="filters">
+            <option value="updated%3E%3D-1w+ORDER+BY+updated+DESC">Updated Recently</option>
+            <option value="created%3E%3D-1w+ORDER+BY+updated+DESC">Added Recently</option>
+            <option value="assignee+%3D+currentUser()+ORDER+BY+updated+DESC">Assigned to Me</option>
+            <option value="reporter+%3D+currentUser()+ORDER+BY+updated+DESC">Reported by Me</option>
+        </select>
+    </div>
+  </div>
+  <div style="position:absolute;top:26em;left:0em;right:3em;">
+    <div class="labelBig">Polling Interval [min]</div>
+    <div class="txtbox2"><input type="text" id="pollingInterval" size="6"/></div>
+  </div>
+  <div style="position:absolute;top:28em;left:0em;right:3em;">
+    <div class="labelBig">Hide Resolved</div>
+    <div class="chkbox"><input type="checkbox" id="hideresolved"/></div>
+  </div>
+
+  </form>
+
+  <div style="position:absolute;top:30em;left:0em;width:100%;height:4em;" id="info"></div>
+
+  <script type="text/javascript">
+      gadget.SettingsScriptlet.main();
+  </script>
+    
+</body>
+</html>
