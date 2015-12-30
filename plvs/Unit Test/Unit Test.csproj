@@ -71,9 +71,9 @@
     <None Include="Resources\plvs-374-no-priority.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\plvs\plvs2010.csproj">
+    <ProjectReference Include="..\plvs\plvs2015.csproj">
       <Project>{A79DF670-278F-4D8E-AC58-72E4A08F09D6}</Project>
-      <Name>plvs2010</Name>
+      <Name>plvs2015</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

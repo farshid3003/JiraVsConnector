@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Atlassian.plvs</RootNamespace>
+    <AssemblyName>plvs2010</AssemblyName>
+    <SignAssembly>False</SignAssembly>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectGuid>{A79DF670-278F-4D8E-AC58-72E4A08F09D6}</ProjectGuid>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
+    <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
+    <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
+    <SccProvider>Mercurial Source Control Package</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Aga.Controls, Version=1.7.0.0, Culture=neutral, PublicKeyToken=fcc90fbf924463a3, processorArchitecture=MSIL" />
+    <Reference Include="Ankh.ExtensionPoints, Version=2.1.7444.278, Culture=neutral, PublicKeyToken=068e4b3e6ce74d73, processorArchitecture=MSIL" />
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\EnvDTE.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Text.Data, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Text.Logic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Text.UI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Text.UI.Wpf, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>third party\newtonsoft\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api\bamboo\BambooBuild.cs" />
+    <Compile Include="api\bamboo\BambooPlan.cs" />
+    <Compile Include="api\bamboo\BambooServerFacade.cs" />
+    <Compile Include="api\bamboo\BambooTest.cs" />
+    <Compile Include="api\bamboo\BuildArtifact.cs" />
+    <Compile Include="api\bamboo\rest\RestSession.cs" />
+    <Compile Include="api\CredentialUtils.cs" />
+    <Compile Include="api\jira\facade\AbstractJiraServerFacade.cs" />
+    <Compile Include="api\jira\facade\SmartJiraServerFacade.cs" />
+    <Compile Include="api\jira\FiveOhThreeJiraException.cs" />
+    <Compile Include="api\jira\gh\Sprint.cs" />
+    <Compile Include="api\jira\JiraAuthenticatedClient.cs" />
+    <Compile Include="api\jira\gh\RapidBoard.cs" />
+    <Compile Include="api\jira\RestClient.cs" />
+    <Compile Include="api\jira\IssueLinkType.cs" />
+    <Compile Include="api\jira\JiraAttachment.cs" />
+    <Compile Include="api\jira\JiraField.cs" />
+    <Compile Include="api\jira\JiraFilter.cs" />
+    <Compile Include="api\jira\JiraIssue.cs" />
+    <Compile Include="api\jira\JiraNamedEntity.cs" />
+    <Compile Include="api\jira\JiraProject.cs" />
+    <Compile Include="api\jira\JiraSavedFilter.cs" />
+    <Compile Include="api\jira\JiraServer.cs" />
+    <Compile Include="api\jira\facade\ClassicJiraServerFacade.cs" />
+    <Compile Include="api\jira\JiraUser.cs" />
+    <Compile Include="api\jira\facade\RestJiraServerFacade.cs" />
+    <Compile Include="api\jira\RssClient.cs" />
+    <Compile Include="api\LoginException.cs" />
+    <Compile Include="api\Server.cs" />
+    <Compile Include="api\jira\soap\SoapSession.cs" />
+    <Compile Include="api\ServerFacade.cs" />
+    <Compile Include="attributes\ProvideIssueRepositoryConnector.cs" />
+    <Compile Include="attributes\StringValueAttribute.cs" />
+    <Compile Include="autoupdate\Autoupdate.cs">
+    </Compile>
+    <Compile Include="autoupdate\UsageCollector.cs" />
+    <Compile Include="dialogs\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\BadCertificateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\BadCertificateDialog.Designer.cs">
+      <DependentUpon>BadCertificateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\bamboo\SearchBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\bamboo\SearchBuild.Designer.cs">
+      <DependentUpon>SearchBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\ExceptionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\ExceptionViewer.Designer.cs">
+      <DependentUpon>ExceptionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\ActionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\ActionSelector.Designer.cs">
+      <DependentUpon>ActionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\AddOrEditJiraServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\AddOrEditJiraServer.Designer.cs">
+      <DependentUpon>AddOrEditJiraServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\AutoUpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\AutoUpdateDialog.Designer.cs">
+      <DependentUpon>AutoUpdateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\bamboo\AddOrEditBambooServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\bamboo\AddOrEditBambooServer.Designer.cs">
+      <DependentUpon>AddOrEditBambooServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\bamboo\TestBambooConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\CreateIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\CreateIssue.Designer.cs">
+      <DependentUpon>CreateIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\DeactivateIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\EditCustomFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\EditCustomFilter.Designer.cs">
+      <DependentUpon>EditCustomFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\GlobalSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\GlobalSettings.Designer.cs">
+      <DependentUpon>GlobalSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\FieldEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\FieldEditor.Designer.cs">
+      <DependentUpon>FieldEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\IssueWorkflowAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\IssueWorkflowAction.Designer.cs">
+      <DependentUpon>IssueWorkflowAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\TestJiraConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\LogWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\LogWork.Designer.cs">
+      <DependentUpon>LogWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\NewIssueComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\NewIssueComment.Designer.cs">
+      <DependentUpon>NewIssueComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\MessageBoxWithHtml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\MessageBoxWithHtml.Designer.cs">
+      <DependentUpon>MessageBoxWithHtml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\ProjectConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\ProjectConfiguration.Designer.cs">
+      <DependentUpon>ProjectConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\SearchIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\SearchIssue.Designer.cs">
+      <DependentUpon>SearchIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\SelectJiraProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\SelectJiraProject.Designer.cs">
+      <DependentUpon>SelectJiraProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\AbstractTestConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\AbstractTestConnection.Designer.cs">
+      <DependentUpon>AbstractTestConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\jira\SetEndTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\jira\SetEndTime.Designer.cs">
+      <DependentUpon>SetEndTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogs\UnhandledExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogs\UnhandledExceptionDialog.Designer.cs">
+      <DependentUpon>UnhandledExceptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventsinks\AbstractMarkerClientEventSink.cs" />
+    <Compile Include="eventsinks\MarginMarkerClientEventSink.cs" />
+    <Compile Include="eventsinks\RunningDocTableEventSink.cs" />
+    <Compile Include="eventsinks\SolutionEventSink.cs" />
+    <Compile Include="eventsinks\TextBufferDataEventSink.cs" />
+    <Compile Include="eventsinks\TextLinesEventSink.cs" />
+    <Compile Include="eventsinks\TextManagerEventSink.cs" />
+    <Compile Include="eventsinks\TextMarkerClientEventSink.cs" />
+    <Compile Include="explorer\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="explorer\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="explorer\DropZone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="explorer\DropZone.Designer.cs">
+      <DependentUpon>DropZone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="explorer\JiraServerExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="explorer\JiraServerExplorer.Designer.cs">
+      <DependentUpon>JiraServerExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="explorer\NavigableJiraServerEntity.cs" />
+    <Compile Include="explorer\treeNodes\AbstractNavigableTreeNodeWithServer.cs" />
+    <Compile Include="explorer\treeNodes\AssigneeDropZoneWorker.cs" />
+    <Compile Include="explorer\treeNodes\ComponentsNode.cs" />
+    <Compile Include="explorer\treeNodes\ComponentNode.cs" />
+    <Compile Include="explorer\treeNodes\UserNode.cs" />
+    <Compile Include="explorer\treeNodes\UsersNode.cs" />
+    <Compile Include="explorer\treeNodes\PriorityNode.cs" />
+    <Compile Include="explorer\treeNodes\PrioritiesNode.cs" />
+    <Compile Include="explorer\treeNodes\ProjectsNode.cs" />
+    <Compile Include="explorer\treeNodes\VersionNode.cs" />
+    <Compile Include="explorer\treeNodes\VersionsNode.cs" />
+    <Compile Include="explorer\treeNodes\ProjectNode.cs" />
+    <Compile Include="markers\vs2010\classifier\JiraIssueEditorClassifier.cs" />
+    <Compile Include="markers\vs2010\classifier\JiraIssueEditorClassifierFormat.cs" />
+    <Compile Include="markers\vs2010\classifier\JiraIssueEditorClassifierType.cs" />
+    <Compile Include="markers\vs2010\DebugMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="markers\vs2010\DebugMon.Designer.cs">
+      <DependentUpon>DebugMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="markers\vs2010\marginglyph\JiraIssueGlyphMouseProcessorProvider.cs" />
+    <Compile Include="markers\vs2010\menu\JiraIssueActionsSmartTag.cs" />
+    <Compile Include="markers\vs2010\marginglyph\JiraIssueGlyphFactory.cs" />
+    <Compile Include="markers\vs2010\marginglyph\JiraIssueGlyphFactoryProvider.cs" />
+    <Compile Include="markers\vs2010\menu\JiraIssueActionsSmartTagger.cs" />
+    <Compile Include="markers\vs2010\menu\JiraIssueActionsSmartTagProvider.cs" />
+    <Compile Include="markers\vs2010\menu\OpenIssueInBrowserSmartTagAction.cs" />
+    <Compile Include="markers\vs2010\menu\OpenIssueInIdeSmartTagAction.cs" />
+    <Compile Include="markers\vs2010\mouseandkeyboard\MouseProcessorProvider.cs" />
+    <Compile Include="markers\vs2010\quickinfo\JiraIssueQuickInfoController.cs" />
+    <Compile Include="markers\vs2010\quickinfo\JiraIssueQuickInfoControllerProvider.cs" />
+    <Compile Include="markers\vs2010\quickinfo\JiraIssueQuickInfoProvider.cs" />
+    <Compile Include="markers\vs2010\quickinfo\JiraIssueQuickInfoSource.cs" />
+    <Compile Include="markers\vs2010\marginglyph\JiraIssueLineGlyphTagger.cs" />
+    <Compile Include="markers\vs2010\marginglyph\JiraIssueLineGlyphTagProvider.cs" />
+    <Compile Include="markers\vs2010\marginglyph\JiraIssueLineGlyphTag.cs" />
+    <Compile Include="markers\vs2010\TagCache.cs" />
+    <Compile Include="markers\vs2010\texttag\JiraIssueTextTag.cs" />
+    <Compile Include="markers\vs2010\texttag\JiraIssueTextTagger.cs" />
+    <Compile Include="markers\vs2010\texttag\JiraIssueTagProvider.cs" />
+    <Compile Include="markers\vs2010\LineTagger.cs" />
+    <Compile Include="markers\vs2010\texttag\LinkUpdateWorkaround.cs" />
+    <Compile Include="models\AbstractServerModel.cs" />
+    <Compile Include="api\bamboo\BambooServer.cs" />
+    <Compile Include="models\bamboo\BambooBuildListModel.cs" />
+    <Compile Include="models\bamboo\BambooBuildListModelImpl.cs" />
+    <Compile Include="models\bamboo\BambooServerModel.cs" />
+    <Compile Include="models\jira\fields\AffectsVersionsFiller.cs" />
+    <Compile Include="models\jira\fields\AssigneeFiller.cs" />
+    <Compile Include="models\jira\fields\ComponentsFiller.cs" />
+    <Compile Include="models\jira\fields\CustomFieldFiller.cs" />
+    <Compile Include="models\jira\fields\DescriptionFiller.cs" />
+    <Compile Include="models\jira\fields\DueDateFiller.cs" />
+    <Compile Include="models\jira\fields\EnvironmentFiller.cs" />
+    <Compile Include="models\jira\fields\FieldFiller.cs" />
+    <Compile Include="models\jira\fields\FixVersionsFiller.cs" />
+    <Compile Include="models\jira\fields\IssueTypeFiller.cs" />
+    <Compile Include="models\jira\fields\PriorityFiller.cs" />
+    <Compile Include="models\jira\fields\ReporterFiller.cs" />
+    <Compile Include="models\jira\fields\ResolutionFiller.cs" />
+    <Compile Include="models\jira\fields\SecurityFiller.cs" />
+    <Compile Include="models\jira\fields\SummaryFiller.cs" />
+    <Compile Include="models\jira\fields\TimeTrackingFiller.cs" />
+    <Compile Include="models\jira\JiraActionFieldType.cs" />
+    <Compile Include="api\jira\JiraUserCache.cs" />
+    <Compile Include="net\ProxyListener.cs" />
+    <Compile Include="scm\AnkhSvnJiraActiveIssueControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scm\AnkhSvnJiraActiveIssueControl.Designer.cs">
+      <DependentUpon>AnkhSvnJiraActiveIssueControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scm\AnkhSvnJiraConnector.cs">
+    </Compile>
+    <Compile Include="scm\AnkhSvnJiraConnectorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scm\AnkhSvnJiraConnectorControl.Designer.cs">
+      <DependentUpon>AnkhSvnJiraConnectorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\AddNewServerLink.cs" />
+    <Compile Include="ui\AutosizeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\BambooBuildHistoryTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\BambooBuildHistoryTable.Designer.cs">
+      <DependentUpon>BambooBuildHistoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\bamboo\BambooBuildTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\bamboonodes\BambooServerTreeNode.cs" />
+    <Compile Include="ui\bamboo\bamboonodes\TreeNodeWithBambooServer.cs" />
+    <Compile Include="ui\bamboo\BambooTestResultTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\BuildDetailsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\BuildDetailsPanel.Designer.cs">
+      <DependentUpon>BuildDetailsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\bamboo\BuildDetailsToolWindow.cs" />
+    <Compile Include="ui\bamboo\BuildDetailsWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\BuildDetailsWindow.Designer.cs">
+      <DependentUpon>BuildDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\bamboo\BuildNode.cs" />
+    <Compile Include="ui\bamboo\BambooBuildGroupByCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\BambooBuildGroupByCombo.Designer.cs">
+      <DependentUpon>BambooBuildGroupByCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\bamboo\BambooBuildGroupByComboItem.cs" />
+    <Compile Include="ui\bamboo\NodeBuildInProgressIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\ProjectNode.cs" />
+    <Compile Include="ui\bamboo\TabBamboo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\bamboo\TabBamboo.Designer.cs">
+      <DependentUpon>TabBamboo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\bamboo\TestMethodNode.cs" />
+    <Compile Include="ui\bamboo\TestPackageOrClassNode.cs" />
+    <Compile Include="ui\bamboo\treemodels\AbstractBuildTreeModel.cs" />
+    <Compile Include="ui\bamboo\treemodels\ProjectAndBranchesBuildTreeModel.cs" />
+    <Compile Include="ui\bamboo\treemodels\FlatBuildTreeModel.cs" />
+    <Compile Include="ui\bamboo\treemodels\TestResultTreeModel.cs" />
+    <Compile Include="ui\ComboBoxWithImages.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\crucible\TabCrucible.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\crucible\TabCrucible.Designer.cs">
+      <DependentUpon>TabCrucible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\jira\fields\DateFieldEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\FixedHeightFieldEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\NamedEntityComboEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\JiraFieldEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\ResolutionEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\TextAreaFieldEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\TextLineFieldEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\TimeTrackingEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\UserFieldEditorProvider.cs" />
+    <Compile Include="ui\jira\fields\NamedEntityListFieldEditorProvider.cs" />
+    <Compile Include="ui\jira\issuefilternodes\GhSprintNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\GhBoardTreeNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\GhGroupTreeNode.cs" />
+    <Compile Include="ui\jira\issues\menus\SavedFilterContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\issues\ToolWindowStateMonitor.cs" />
+    <Compile Include="ui\jira\JiraActiveIssueManager.cs" />
+    <Compile Include="ui\jira\JiraAttachmentListViewItem.cs" />
+    <Compile Include="ui\jira\JiraFiltersTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\JiraIssueTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\JiraNamedEntityComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\JiraProjectListViewItem.cs" />
+    <Compile Include="ui\jira\JiraTextAreaWithWikiPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\jira\JiraTextAreaWithWikiPreview.Designer.cs">
+      <DependentUpon>JiraTextAreaWithWikiPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\jira\JiraUserPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\jira\JiraUserPicker.Designer.cs">
+      <DependentUpon>JiraUserPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\OwnerDrawListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\TabControlWithCloseButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\TextBoxWithSpellChecker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\ToolWindowFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\TreeNodeCollapseExpandStatusManager.cs" />
+    <Compile Include="ui\WebBrowserWithLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\WebBrowserWithLabel.Designer.cs">
+      <DependentUpon>WebBrowserWithLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="util\bamboo\BambooBuildUtils.cs" />
+    <Compile Include="util\Constants.cs" />
+    <Compile Include="util\ExceptionBuilder.cs" />
+    <Compile Include="util\FileListPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="util\FileListPicker.Designer.cs">
+      <DependentUpon>FileListPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="util\jira\IssueActionRunner.cs" />
+    <Compile Include="util\PlvsLogger.cs" />
+    <Compile Include="util\SolutionUtils.cs" />
+    <Compile Include="util\XPathUtils.cs" />
+    <Compile Include="ui\jira\TabJira.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\jira\TabJira.Designer.cs">
+      <DependentUpon>TabJira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\jira\IssueDetailsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\jira\IssueDetailsPanel.Designer.cs">
+      <DependentUpon>IssueDetailsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\jira\IssueDetailsToolWindow.cs" />
+    <Compile Include="ui\jira\IssueDetailsWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\jira\IssueDetailsWindow.Designer.cs">
+      <DependentUpon>IssueDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="markers\JiraEditorLinkManager.cs" />
+    <Compile Include="markers\JiraLinkMarginMarkerType.cs" />
+    <Compile Include="markers\JiraLinkTextMarkerType.cs" />
+    <Compile Include="markers\JiraLinkMarkerTypeProvider.cs" />
+    <Compile Include="models\jira\JiraIssueListModelImpl.cs" />
+    <Compile Include="models\jira\JiraIssueListSearchingModel.cs" />
+    <Compile Include="models\jira\JiraPresetFilter.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterAssignedToMe.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterMostImportant.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterOutstanding.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterRecentlyAdded.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterRecentlyResolved.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterRecentlyUpdated.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterReportedByMe.cs" />
+    <Compile Include="models\jira\presetFilters\JiraPresetFilterUnscheduled.cs" />
+    <Compile Include="store\CredentialsVault.cs" />
+    <Compile Include="models\ImageCache.cs" />
+    <Compile Include="models\jira\JiraCustomFilter.cs" />
+    <Compile Include="models\jira\JiraIssueListModel.cs" />
+    <Compile Include="models\jira\JiraIssueListModelBuilder.cs" />
+    <Compile Include="api\jira\JiraServerCache.cs" />
+    <Compile Include="models\jira\JiraServerModel.cs" />
+    <Compile Include="models\jira\RecentlyViewedIssue.cs" />
+    <Compile Include="models\jira\RecentlyViewedIssuesModel.cs" />
+    <Compile Include="windows\AtlassianToolWindow.cs" />
+    <Compile Include="Guids.cs" />
+    <Compile Include="windows\AtlassianPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="windows\AtlassianPanel.Designer.cs">
+      <DependentUpon>AtlassianPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="plvsPackage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PkgCmdID.cs" />
+    <Compile Include="store\DPApi.cs" />
+    <Compile Include="store\ParameterStore.cs" />
+    <Compile Include="windows\ToolWindowManager.cs" />
+    <Compile Include="ui\jira\issues\AbstractIssueTreeNode.cs" />
+    <Compile Include="ui\jira\issues\menus\PresetFilterGroupContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\issues\menus\CustomFilterGroupContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\issues\issuegroupnodes\AbstractIssueGroupNode.cs" />
+    <Compile Include="ui\jira\issues\issuegroupnodes\ByPriorityIssueGroupNode.cs" />
+    <Compile Include="ui\jira\issues\issuegroupnodes\ByProjectIssueGroupNode.cs" />
+    <Compile Include="ui\jira\issues\issuegroupnodes\ByTypeIssueGroupNode.cs" />
+    <Compile Include="ui\jira\issues\issuegroupnodes\ByStatusIssueGroupNode.cs" />
+    <Compile Include="ui\jira\issues\issuegroupnodes\AbstractByNamedEntityIssueGroupNode.cs" />
+    <Compile Include="ui\jira\issues\issuegroupnodes\ByLastUpdatedIssueGroupNode.cs" />
+    <Compile Include="ui\jira\issues\menus\PresetFilterContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\issues\treemodels\AbstractGroupingIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issues\treemodels\AbstractIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issues\treemodels\GroupedByLastUpdatedIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issues\treemodels\GroupedByStatusIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issues\treemodels\GroupedByTypeIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issues\treemodels\GroupedByPriorityIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issues\treemodels\GroupedByProjectIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraCustomFilterTreeNode.cs" />
+    <Compile Include="ui\jira\issues\menus\CustomFilterContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\issues\treemodels\FlatIssueTreeModel.cs" />
+    <Compile Include="ui\jira\issues\menus\IssueContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\issues\IssueNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraCustomFiltersGroupTreeNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraFilterGroupTreeNode.cs" />
+    <Compile Include="ui\jira\JiraIssueGroupByCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\jira\JiraIssueGroupByCombo.Designer.cs">
+      <DependentUpon>JiraIssueGroupByCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ui\jira\JiraIssueGroupByComboItem.cs">
+    </Compile>
+    <Compile Include="ui\jira\JiraNamedEntityListViewItem.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraPresetFiltersGroupTreeNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraPresetFilterTreeNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraSavedFiltersGroupTreeNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraSavedFilterTreeNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\JiraServerTreeNode.cs" />
+    <Compile Include="ui\jira\issuefilternodes\RecentlyOpenIssuesTreeNode.cs" />
+    <Compile Include="ui\StatusLabel.cs" />
+    <Compile Include="ui\jira\issuefilternodes\TreeNodeWithJiraServer.cs" />
+    <Compile Include="store\ParameterStoreManager.cs" />
+    <Compile Include="ui\jira\UserTypeComboBoxItem.cs" />
+    <Compile Include="util\PlvsUtils.cs" />
+    <Compile Include="util\jira\JiraIssueUtils.cs" />
+    <Compile Include="util\StreamEater.cs" />
+    <Compile Include="PlvsVersionInfo.cs" />
+    <Compile Include="VSPackage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VSPackage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Atlassian.plvs.api.soap.service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dialogs\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\BadCertificateDialog.resx">
+      <DependentUpon>BadCertificateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\bamboo\SearchBuild.resx">
+      <DependentUpon>SearchBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\ExceptionViewer.resx">
+      <DependentUpon>ExceptionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\ActionSelector.resx">
+      <DependentUpon>ActionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\AddOrEditJiraServer.resx">
+      <DependentUpon>AddOrEditJiraServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\AutoUpdateDialog.resx">
+      <DependentUpon>AutoUpdateDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\bamboo\AddOrEditBambooServer.resx">
+      <DependentUpon>AddOrEditBambooServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\CreateIssue.resx">
+      <DependentUpon>CreateIssue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\EditCustomFilter.resx">
+      <DependentUpon>EditCustomFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\GlobalSettings.resx">
+      <DependentUpon>GlobalSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\FieldEditor.resx">
+      <DependentUpon>FieldEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\IssueWorkflowAction.resx">
+      <DependentUpon>IssueWorkflowAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\LogWork.resx">
+      <DependentUpon>LogWork.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\NewIssueComment.resx">
+      <DependentUpon>NewIssueComment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\MessageBoxWithHtml.resx">
+      <DependentUpon>MessageBoxWithHtml.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\ProjectConfiguration.resx">
+      <DependentUpon>ProjectConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\SearchIssue.resx">
+      <DependentUpon>SearchIssue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\SelectJiraProject.resx">
+      <DependentUpon>SelectJiraProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\AbstractTestConnection.resx">
+      <DependentUpon>AbstractTestConnection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\jira\SetEndTime.resx">
+      <DependentUpon>SetEndTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogs\UnhandledExceptionDialog.resx">
+      <DependentUpon>UnhandledExceptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="explorer\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="explorer\DropZone.resx">
+      <DependentUpon>DropZone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="explorer\JiraServerExplorer.resx">
+      <DependentUpon>JiraServerExplorer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="markers\vs2010\DebugMon.resx">
+      <DependentUpon>DebugMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scm\AnkhSvnJiraActiveIssueControl.resx">
+      <DependentUpon>AnkhSvnJiraActiveIssueControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scm\AnkhSvnJiraConnectorControl.resx">
+      <DependentUpon>AnkhSvnJiraConnectorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\bamboo\BambooBuildHistoryTable.resx">
+      <DependentUpon>BambooBuildHistoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\bamboo\BuildDetailsPanel.resx">
+      <DependentUpon>BuildDetailsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\bamboo\BuildDetailsWindow.resx">
+      <DependentUpon>BuildDetailsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\bamboo\TabBamboo.resx">
+      <DependentUpon>TabBamboo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\crucible\TabCrucible.resx">
+      <DependentUpon>TabCrucible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\jira\JiraTextAreaWithWikiPreview.resx">
+      <DependentUpon>JiraTextAreaWithWikiPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\jira\JiraUserPicker.resx">
+      <DependentUpon>JiraUserPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\jira\TabJira.resx">
+      <DependentUpon>TabJira.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\jira\IssueDetailsPanel.resx">
+      <DependentUpon>IssueDetailsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\jira\IssueDetailsWindow.resx">
+      <DependentUpon>IssueDetailsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\WebBrowserWithLabel.resx">
+      <DependentUpon>WebBrowserWithLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="util\FileListPicker.resx">
+      <DependentUpon>FileListPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windows\AtlassianPanel.resx">
+      <DependentUpon>AtlassianPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSPackage.resx">
+      <MergeWithCTO>true</MergeWithCTO>
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VSPackage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <VSCTCompile Include="plvs.vsct">
+      <ResourceName>1000</ResourceName>
+    </VSCTCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Key.snk" />
+    <Content Include="LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\icons\small_throbber" />
+    <None Include="Web References\Atlassian.plvs.api.soap.service\jirasoapservice-v2.wsdl" />
+    <None Include="Web References\Atlassian.plvs.api.soap.service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteAttachment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteAvatar.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteComment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteComponent.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteField.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteFilter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteGroup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteIssue.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteIssueType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteNamedObject.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemotePermission.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemotePermissionScheme.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemotePriority.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteProject.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteProjectRole.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteProjectRoleActors.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteResolution.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteRoleActors.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteScheme.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteSecurityLevel.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteServerInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteUser.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteVersion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Atlassian.plvs.api.soap.service\RemoteWorklog.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icons\about.png" />
+    <Content Include="Resources\icons\add_jira.png" />
+    <Content Include="Resources\icons\ajax-loader.gif" />
+    <Content Include="Resources\icons\atlassian-538x235.png" />
+    <Content Include="Resources\icons\atlassian-installer.bmp" />
+    <Content Include="Resources\icons\Atlassian.png" />
+    <Content Include="Resources\icons\bamboo-blue-16-with-padding.png" />
+    <Content Include="Resources\icons\bamboo-blue-16.ico" />
+    <Content Include="Resources\icons\bamboo-blue-16.png" />
+    <Content Include="Resources\icons\bamboo-green-16.ico" />
+    <Content Include="Resources\icons\bamboo-green-16.png" />
+    <Content Include="Resources\icons\bamboo-grey-16.ico" />
+    <Content Include="Resources\icons\bamboo-grey-16.png" />
+    <Content Include="Resources\icons\bamboo-red-16.ico" />
+    <Content Include="Resources\icons\bamboo-red-16.png" />
+    <Content Include="Resources\icons\bluetick.png" />
+    <Content Include="Resources\icons\bug.png" />
+    <Content Include="Resources\icons\close.png" />
+    <Content Include="Resources\icons\collapse_all.png" />
+    <Content Include="Resources\icons\dropzone.png" />
+    <Content Include="Resources\icons\edit.png" />
+    <Content Include="Resources\icons\expand_all.png" />
+    <Content Include="Resources\icons\find-bamboo.png" />
+    <Content Include="Resources\icons\find-jira.png" />
+    <Content Include="Resources\icons\folder-bamboo.png" />
+    <Content Include="Resources\icons\folder-jira.png" />
+    <Content Include="Resources\icons\global_properties.png" />
+    <Content Include="Resources\icons\icn_comment.gif" />
+    <Content Include="Resources\icons\icn_label.gif" />
+    <Content Include="Resources\icons\icn_plan_disabled.gif" />
+    <Content Include="Resources\icons\icn_plan_failed.gif" />
+    <Content Include="Resources\icons\icn_plan_passed.gif" />
+    <Content Include="Resources\icons\icon_addattachment.png" />
+    <Content Include="Resources\icons\ico_activateissue.png" />
+    <Content Include="Resources\icons\ico_clonefilter.png" />
+    <Content Include="Resources\icons\ico_copytoclipboard.png" />
+    <Content Include="Resources\icons\ico_editinbrowser.png" />
+    <Content Include="Resources\icons\ico_editinide.png" />
+    <Content Include="Resources\icons\ico_groupsubtasks.png" />
+    <Content Include="Resources\icons\ico_inactiveissue.png" />
+    <Content Include="Resources\icons\ico_jira_custom_filter.png" />
+    <Content Include="Resources\icons\ico_jira_filter.png" />
+    <Content Include="Resources\icons\ico_jira_preset_filter.png" />
+    <Content Include="Resources\icons\ico_jira_recent_issues.png" />
+    <Content Include="Resources\icons\ico_jira_saved_filter.png" />
+    <Content Include="Resources\icons\ico_logworkonissue.png" />
+    <Content Include="Resources\icons\ico_pauseissue.png" />
+    <Content Include="Resources\icons\ico_updateavailable.png" />
+    <Content Include="Resources\icons\ico_updatenotavailable.png" />
+    <Content Include="Resources\icons\ide_plugin_16.bmp" />
+    <Content Include="Resources\icons\ide_plugin_16.ico" />
+    <Content Include="Resources\icons\ide_plugin_16_with_padding.png" />
+    <Content Include="Resources\icons\ide_plugin_300.png" />
+    <Content Include="Resources\icons\ide_plugin_32.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\icons\ide_plugin_32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\icons\Images.bmp" />
+    <Content Include="Resources\icons\jira-blue-16-with-padding.png" />
+    <Content Include="Resources\icons\jira-blue-16.ico" />
+    <Content Include="Resources\icons\jira-blue-16.png" />
+    <Content Include="Resources\icons\kanban16.png" />
+    <Content Include="Resources\icons\minus.png" />
+    <Content Include="Resources\icons\new_comment.png" />
+    <Content Include="Resources\icons\nothing.png" />
+    <Resource Include="Resources\icons\open_in_ide.png" />
+    <Content Include="Resources\icons\pazu.bmp" />
+    <None Include="markers\Markers2008.reg" />
+    <None Include="Resources\icons\pazu_32.bmp" />
+    <Content Include="Resources\icons\pazu_32.ico" />
+    <Content Include="Resources\icons\pin_other.png" />
+    <Content Include="Resources\icons\plus.png" />
+    <Content Include="Resources\icons\projectsettings.png" />
+    <Content Include="Resources\icons\refresh.png" />
+    <Content Include="Resources\icons\run-build.png" />
+    <Content Include="Resources\icons\scrum16.png" />
+    <Content Include="Resources\icons\search-jira.png" />
+    <Content Include="Resources\icons\status_plugin.gif" />
+    <Content Include="Resources\icons\status_plugin.ico" />
+    <Content Include="Resources\icons\status_plugin.png" />
+    <Content Include="Resources\icons\tab_bamboo-grey.png" />
+    <Content Include="Resources\icons\tab_bamboo.png" />
+    <Content Include="Resources\icons\tab_jira-grey.png" />
+    <Content Include="Resources\icons\tab_jira.png" />
+    <Content Include="Resources\icons\unknown.png" />
+    <Content Include="Resources\icons\update_unavailable.ico" />
+    <Content Include="Resources\icons\update_unavailable.png" />
+    <Resource Include="Resources\icons\view_in_browser.png" />
+    <None Include="Resources\texts\about_html.txt" />
+    <None Include="Resources\texts\comments_css.txt" />
+    <None Include="Resources\texts\summary_and_description_css.txt" />
+    <None Include="Resources\texts\toggler_javascript.txt" />
+    <None Include="third party\ankh\LICENSE.rtf" />
+    <Content Include="Resources\icons\VSObject_Class.png" />
+    <Content Include="Resources\icons\VSObject_Namespace.png" />
+    <Content Include="Resources\texts\attachment_download_html.txt" />
+    <Content Include="Resources\texts\autoupdate_html.txt" />
+    <Content Include="Resources\texts\build_summary_html.txt" />
+    <Content Include="Resources\texts\explorer_navigator_error_html.txt" />
+    <Content Include="Resources\texts\issue_summary_html.txt" />
+    <Content Include="Resources\texts\issue_summary_original_estimate_editable_html.txt" />
+    <Content Include="Resources\texts\issue_summary_parent_issue_html.txt" />
+    <Content Include="Resources\texts\issue_summary_remaining_estimate_editable_html.txt" />
+    <Content Include="Resources\texts\throbber_html.txt" />
+    <None Include="source.extension.vsixmanifest" />
+    <Content Include="third party\ankh\Ankh.ExtensionPoints.dll" />
+    <Content Include="third party\newtonsoft\Newtonsoft.Json.dll" />
+    <Content Include="third party\treeviewadv\Aga.Controls.dll" />
+    <Content Include="third party\treeviewadv\license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://jira.atlassian.com/rpc/soap/jirasoapservice-v2%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Atlassian.plvs.api.soap.service\</RelPath>
+      <UpdateFromURL>http://jira.atlassian.com/rpc/soap/jirasoapservice-v2%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>plvs_Atlassian_plvs_api_soap_service_JiraSoapServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <!--
+    To specify a different registry root to register your package, uncomment the TargetRegistryRoot
+    tag and specify a registry root in it.
+    <TargetRegistryRoot></TargetRegistryRoot>
+    -->
+    <RegisterOutputPackage>true</RegisterOutputPackage>
+    <RegisterWithCodebase>true</RegisterWithCodebase>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VS2010, PLVS_133_WORKAROUND</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;VS2010, PLVS_133_WORKAROUND</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\VSSDK\Microsoft.VsSDK.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy $(ProjectDir)\Resources\icons\edit.png $(ProjectDir)\$(OutDir)
+copy $(ProjectDir)\Resources\icons\ajax-loader.gif $(ProjectDir)\$(OutDir)
+copy $(ProjectDir)\Resources\icons\nothing.png $(ProjectDir)\$(OutDir)
+
+copy $(ProjectDir)\Resources\icons\edit.png "%25LOCALAPPDATA%25\Microsoft\VisualStudio\10.0Exp\Extensions\Atlassian\Atlassian Connector\1.0"
+copy $(ProjectDir)\Resources\icons\ajax-loader.gif "%25LOCALAPPDATA%25\Microsoft\VisualStudio\10.0Exp\Extensions\Atlassian\Atlassian Connector\1.0"
+copy $(ProjectDir)\Resources\icons\nothing.png "%25LOCALAPPDATA%25\Microsoft\VisualStudio\10.0Exp\Extensions\Atlassian\Atlassian Connector\1.0"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>
